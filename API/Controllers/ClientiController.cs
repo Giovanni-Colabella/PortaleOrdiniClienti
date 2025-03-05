@@ -82,5 +82,19 @@ namespace API.Controllers
             var result = await _clienteService.DeleteClienteAsync(id);
             return Ok(result);
         }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> Search([FromQuery] string keyword)
+        {
+            try 
+            {
+                var clienti = await _clienteService.SearchAsync(keyword);
+                return Ok(clienti);
+            }
+            catch (KeyNotFoundException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
     }
 }

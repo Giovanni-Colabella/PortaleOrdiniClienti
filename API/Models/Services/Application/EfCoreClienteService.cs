@@ -1,7 +1,7 @@
+using API.Models.DTO.Mappings;
 using API.Models.ValueObjects;
 using API.Services;
 
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Models.Services.Application
@@ -64,9 +64,7 @@ namespace API.Models.Services.Application
                 throw new KeyNotFoundException("Cliente non trovato");
             }
 
-            var clienteDto = ClienteDto.FromEntity(cliente);
-
-            return clienteDto;
+            return cliente.ToDto();
         }
 
         public async Task<List<ClienteDto>> GetClientiAsync()
@@ -75,8 +73,8 @@ namespace API.Models.Services.Application
             var clienti = await _context.Clienti.OrderByDescending(c => c.Id).ToListAsync();
 
             // Per ogni cliente andiamo a creare il corrispettivo DTO
-            List<ClienteDto> clientiDto = clienti.Select(cliente => 
-                ClienteDto.FromEntity(cliente)
+            List<ClienteDto> clientiDto = clienti.Select(cliente =>
+                cliente.ToDto()
             ).ToList();
 
             // Restituisci la lista di DTO
@@ -86,33 +84,31 @@ namespace API.Models.Services.Application
 
         public async Task<ClienteDto> UpdateClienteAsync(int id, ClienteDto clienteDto)
         {
+            // Trova il cliente dal database usando l'ID
             var cliente = await _context.Clienti.FindAsync(id);
             if (cliente == null)
             {
                 throw new KeyNotFoundException("Cliente non trovato");
             }
 
-            // Aggiorna le proprietà del cliente
-            cliente.Nome = clienteDto.Nome;
-            cliente.Cognome = clienteDto.Cognome;
-            cliente.Email = clienteDto.Email;
-            cliente.NumeroTelefono = clienteDto.NumeroTelefono ?? "";
-            cliente.Indirizzo = new Indirizzo
-            {
-                Via = clienteDto.Indirizzo.Via,
-                Citta = clienteDto.Indirizzo.Citta,
-                CAP = clienteDto.Indirizzo.CAP
-            };
-            cliente.Status = clienteDto.Status;
-            cliente.DataIscrizione = clienteDto.DataIscrizione;
+            var updatedCliente = clienteDto.ToEntity();
+
+
+            cliente.Nome = updatedCliente.Nome;
+            cliente.Cognome = updatedCliente.Cognome;
+            cliente.Email = updatedCliente.Email;
+            cliente.NumeroTelefono = updatedCliente.NumeroTelefono;
+            cliente.Indirizzo = updatedCliente.Indirizzo;
+            cliente.Status = updatedCliente.Status;
+            cliente.DataIscrizione = updatedCliente.DataIscrizione;
+
 
             // Salva le modifiche nel database
             await _context.SaveChangesAsync();
 
             // Restituisce il DTO aggiornato
-            return ClienteDto.FromEntity(cliente);
+            return cliente.ToDto();
         }
-
 
         public bool ClienteExists(int id)
         {
@@ -120,5 +116,16 @@ namespace API.Models.Services.Application
             return _context.Clienti.Any(c => c.Id == id);
         }
 
+        public async Task<List<ClienteDto>> SearchAsync(string keyword)
+        {
+            List<Cliente> clientiFound = await _context.Clienti.Where(c => c.Nome.Contains(keyword) 
+                                                                    || c.Cognome.Contains(keyword) 
+                                                                    || c.Email.Contains(keyword)
+                                                                    ).ToListAsync();
+
+            List<ClienteDto> clientiDto = clientiFound.Select(c => c.ToDto()).ToList();
+
+            return clientiDto;
+        }
     }
 }

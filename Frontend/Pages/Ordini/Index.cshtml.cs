@@ -18,13 +18,21 @@ namespace Frontend.Pages.Ordini
         public List<OrdineViewModel> Ordini { get; set; } = new List<OrdineViewModel>();
         public int CurrentPage { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
+        public string? Search { get; set; }
         private const int PageSize = 10;
 
-        public async Task OnGet(int? pageNumber)
+        public async Task OnGet(string? search , int? pageNumber)
         {
+            Search = search;
             CurrentPage = pageNumber ?? 1;
 
-            var response = await _httpClient.GetAsync("http://localhost:5150/api/ordini");
+            var url = "http://localhost:5150/api/ordini";
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                url = $"http://localhost:5150/api/ordini/search?keyword={Uri.EscapeDataString(search)}";
+            }
+
+            var response = await _httpClient.GetAsync(url);
 
             if(response.IsSuccessStatusCode)
             {

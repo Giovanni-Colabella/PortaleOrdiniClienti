@@ -74,3 +74,4 @@ C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\API\obj\Debug\net8.0\ref\API.d
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\API\bin\Debug\net8.0\FluentValidation.dll
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\API\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\API\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\obj\Debug\net8.0\API.sourcelink.json

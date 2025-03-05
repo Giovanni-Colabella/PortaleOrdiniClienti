@@ -1,5 +1,3 @@
-using Microsoft.AspNetCore.Mvc;
-
 namespace API.Models.Services.Application
 {
     public interface IClienteService
@@ -10,5 +8,6 @@ namespace API.Models.Services.Application
         Task<ClienteDto> UpdateClienteAsync(int id, ClienteDto clienteDto);
         Task<bool> DeleteClienteAsync(int id);
         bool ClienteExists(int id);
+        Task<List<ClienteDto>> SearchAsync (string keyword);
     }
 }

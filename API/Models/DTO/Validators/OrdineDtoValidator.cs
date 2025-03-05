@@ -20,9 +20,9 @@ public class OrdineDtoValidator : AbstractValidator<OrdineDto>
             .LessThanOrEqualTo(10000).WithMessage("Il campo TotaleOrdine deve essere minore o uguale a 10000");
 
         RuleFor(input => input.TotaleOrdine)
-        .NotEmpty().WithMessage("Il campo TotaleOrdine è obbligatorio.")
-        .GreaterThanOrEqualTo(1).WithMessage("Il campo TotaleOrdine deve essere maggiore o uguale a 1.")
-        .LessThanOrEqualTo(10000).WithMessage("Il campo TotaleOrdine deve essere minore o uguale a 10000.");
+            .NotEmpty().WithMessage("Il campo TotaleOrdine è obbligatorio.")
+            .GreaterThanOrEqualTo(1).WithMessage("Il campo TotaleOrdine deve essere maggiore o uguale a 1.")
+            .LessThanOrEqualTo(10000).WithMessage("Il campo TotaleOrdine deve essere minore o uguale a 10000.");
 
 
         RuleFor(input => input.DataOrdine).NotEmpty().WithMessage("Il campo DataOrdine è obbligatorio.")

@@ -10,4 +10,5 @@ public interface IOrdineService
     Task<bool> CreateOrdineAsync(OrdineDto ordineDto);
     Task<bool> DeleteOrdineAsync(int id);
     Task<bool> UpdateOrdineAsync(int id, OrdineDto ordineDto);
+    Task<List<OrdineDto>> SearchAsync(string keyword);
 }

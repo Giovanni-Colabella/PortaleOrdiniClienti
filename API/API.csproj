@@ -21,7 +21,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\DTO\ModelBinders\" />
     <Folder Include="Models\Options\" />
     <Folder Include="Services\Application\" />
   </ItemGroup>

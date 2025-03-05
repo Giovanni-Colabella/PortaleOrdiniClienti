@@ -1,4 +1,5 @@
 using API.Models.DTO;
+using API.Models.DTO.Mappings;
 using API.Models.Entities;
 using API.Services;
 
@@ -18,7 +19,7 @@ public class EfCoreOrdineService : IOrdineService
     public async Task<List<OrdineDto>> GetOrdiniAsync()
     {
         List<Ordine> ordini = await _context.Ordini.Include(o => o.Cliente).OrderByDescending(o => o.IdOrdine).ToListAsync();
-        List<OrdineDto> ordiniDto = ordini.Select(ordine => OrdineDto.FromEntity(ordine)).ToList();
+        List<OrdineDto> ordiniDto = ordini.Select(ordine => ordine.ToDto()).ToList();
 
         return ordiniDto;
     }
@@ -26,15 +27,15 @@ public class EfCoreOrdineService : IOrdineService
 
     public async Task<OrdineDto> GetOrdineAsync(int id)
     {
-        Ordine ordine = await  _context.Ordini
-                                .Include(o => o.Cliente) 
+        Ordine ordine = await _context.Ordini
+                                .Include(o => o.Cliente)
                                 .FirstOrDefaultAsync(o => o.IdOrdine == id);
         if (ordine == null)
         {
             throw new KeyNotFoundException("Ordine non trovato");
         }
 
-        return OrdineDto.FromEntity(ordine);
+        return ordine.ToDto();
 
     }
 
@@ -46,16 +47,7 @@ public class EfCoreOrdineService : IOrdineService
             return false;
         }
 
-        Ordine ordine = new Ordine 
-        {
-            IdOrdine = ordineDto.IdOrdine,
-            TotaleOrdine = ordineDto.TotaleOrdine,
-            DataOrdine = ordineDto.DataOrdine,
-            Stato = ordineDto.Stato,
-            MetodoPagamento = ordineDto.MetodoPagamento
-        };
-
-        _context.Ordini.Add(ordine);
+        _context.Ordini.Add(ordineDto.ToEntity());
         await _context.SaveChangesAsync();
 
         return true;
@@ -81,21 +73,57 @@ public class EfCoreOrdineService : IOrdineService
     public async Task<bool> UpdateOrdineAsync(int id, OrdineDto ordineDto)
     {
         var ordine = await _context.Ordini.FindAsync(id);
+
         if (ordine == null)
         {
-            return false;
+            return false; // Se l'ordine non esiste, restituisci false
         }
 
-        ordine.ClienteId = ordineDto.ClienteId;
-        ordine.TotaleOrdine = ordineDto.TotaleOrdine;
-        ordine.DataOrdine = ordineDto.DataOrdine;
-        ordine.Stato = ordineDto.Stato;
-        ordine.MetodoPagamento = ordineDto.MetodoPagamento;
+        // Aggiorna l'oggetto
+        var ordineUpdated = ordineDto.ToEntity();
 
-        await _context.SaveChangesAsync();
+        // Copia le proprietà
+        ordine.IdOrdine = ordineUpdated.IdOrdine;
+        ordine.DataOrdine = ordineUpdated.DataOrdine;
+        ordine.TotaleOrdine = ordineUpdated.TotaleOrdine;
+        ordine.ClienteId = ordineUpdated.ClienteId;
+        ordine.Stato = ordineUpdated.Stato;
+        ordine.MetodoPagamento = ordineUpdated.MetodoPagamento;
 
-        return true;
+        try
+        {
+            await _context.SaveChangesAsync();
+            return true;
+        }
+        catch (DbUpdateException ex)
+        {
+            // Log dell'errore
+            Console.WriteLine(ex.Message);
+            return false;
+        }
     }
 
-    
+    public async Task<List<OrdineDto>> SearchAsync(string keyword)
+    {
+        if (string.IsNullOrWhiteSpace(keyword))
+        {
+            return new List<OrdineDto>(); // Se la ricerca è vuota, ritorna una lista vuota.
+        }
+
+        List<Ordine> ordiniFound = await _context.Ordini
+            .Include(ordine => ordine.Cliente)  
+            .Where(ordine => ordine.Cliente != null &&
+                            (ordine.Cliente.Nome.Contains(keyword) ||
+                            ordine.Cliente.Cognome.Contains(keyword)))
+            .AsNoTracking()  
+            .ToListAsync();
+
+        List<OrdineDto> ordiniDto = ordiniFound.Select(ordine => ordine.ToDto()).ToList();
+
+        return ordiniDto;
+    }
+
 }
+
+
+

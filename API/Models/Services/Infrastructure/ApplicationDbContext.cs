@@ -13,6 +13,8 @@ namespace API.Services
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
+            
             modelBuilder.Entity<Cliente>()
                 .OwnsOne(c => c.Indirizzo, indirizzo =>
                 {
@@ -30,6 +32,12 @@ namespace API.Services
                         .HasColumnName("Indirizzo_CAP")
                         .IsRequired();
                 });
+
+            modelBuilder.Entity<Ordine>()
+                .HasOne(o => o.Cliente)
+                .WithMany(c => c.Ordini)
+                .HasForeignKey(o => o.ClienteId)
+                .OnDelete(DeleteBehavior.Cascade); // Se un cliente viene cancellato, cancella anche i suoi ordini
 
         }
 

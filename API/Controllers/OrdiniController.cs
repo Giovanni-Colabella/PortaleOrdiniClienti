@@ -93,4 +93,18 @@ public class OrdiniController : ControllerBase
 
         return Ok(result);
     }
+
+    [HttpGet("search")]
+    public async Task<IActionResult> SearchOrdiniAsync([FromQuery] string keyword)
+    {
+        try
+        {
+            List<OrdineDto> ordini = await _ordineService.SearchAsync(keyword);
+            return Ok(ordini);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(ex.Message);
+        }
+    }
 }
