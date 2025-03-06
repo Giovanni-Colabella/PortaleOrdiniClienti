@@ -12,8 +12,9 @@
         {
             <div class="mb-4 p-4 bg-red-100 border border-red-400 rounded-lg shadow-md">
                 <div class="flex items-center mb-2">
-                    <span>❌</span>
-                    <p class="text-red-600 font-semibold text-sm">Si è verificato un errore nell'invio dei dati</p>
+                    <span><i class="fas fa-exclamation-triangle text-red-600"></i>
+                    </span>
+                    <p class="text-red-600 font-semibold text-sm"> Si è verificato un errore nell'invio dei dati</p>
                 </div>
                 <ul class="list-disc pl-5 text-red-700 text-xs space-y-1">
                     @foreach (var error in Model.ListValidationErrors)

@@ -118,14 +118,24 @@ namespace API.Models.Services.Application
 
         public async Task<List<ClienteDto>> SearchAsync(string keyword)
         {
-            List<Cliente> clientiFound = await _context.Clienti.Where(c => c.Nome.Contains(keyword) 
-                                                                    || c.Cognome.Contains(keyword) 
+            List<Cliente> clientiFound = await _context.Clienti.Where(c => c.Nome.Contains(keyword)
+                                                                    || c.Cognome.Contains(keyword)
                                                                     || c.Email.Contains(keyword)
                                                                     ).ToListAsync();
 
             List<ClienteDto> clientiDto = clientiFound.Select(c => c.ToDto()).ToList();
 
             return clientiDto;
+        }
+
+        public async Task<int> CountAllClientiAsync()
+        {
+            return await _context.Clienti.CountAsync();
+        }
+
+        public async Task<int> CountWeeklyClientiAsync()
+        {
+            return await _context.Clienti.Where(c => c.DataIscrizione >= DateTime.Now.AddDays(-7)).CountAsync();
         }
     }
 }

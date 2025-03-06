@@ -123,6 +123,10 @@ public class EfCoreOrdineService : IOrdineService
         return ordiniDto;
     }
 
+    public async Task<int> CountAllOrdiniAsync()
+    {
+        return await _context.Ordini.CountAsync();
+    }
 }
 
 

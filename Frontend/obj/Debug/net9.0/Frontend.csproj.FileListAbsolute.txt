@@ -53,4 +53,4 @@ C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\bin\Debug\net9.0\Newt
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\obj\Debug\net9.0\Frontend.csproj.AssemblyReference.cache
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\obj\Debug\net9.0\Frontend.csproj.Up2Date
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\Frontend.sourcelink.json
-C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\compressed\qufg9nuftv-su5z1t69xs.gz
+C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\compressed\qufg9nuftv-uodnu4rwya.gz
