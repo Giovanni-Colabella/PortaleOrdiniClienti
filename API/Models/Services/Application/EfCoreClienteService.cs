@@ -1,5 +1,4 @@
 using API.Models.DTO.Mappings;
-using API.Models.ValueObjects;
 using API.Services;
 
 using Microsoft.EntityFrameworkCore;
@@ -22,20 +21,7 @@ namespace API.Models.Services.Application
                 return false;
             }
 
-            var cliente = new Cliente
-            {
-                Nome = clienteDto.Nome,
-                Cognome = clienteDto.Cognome,
-                Email = clienteDto.Email,
-                NumeroTelefono = clienteDto.NumeroTelefono ?? "",
-                Indirizzo = new Indirizzo(
-                    clienteDto.Indirizzo.Via,
-                    clienteDto.Indirizzo.Citta,
-                    clienteDto.Indirizzo.CAP
-                ),
-                Status = clienteDto.Status,
-                DataIscrizione = clienteDto.DataIscrizione
-            };
+            Cliente cliente = clienteDto.ToEntity();
 
             _context.Clienti.Add(cliente);
             await _context.SaveChangesAsync();
@@ -137,5 +123,6 @@ namespace API.Models.Services.Application
         {
             return await _context.Clienti.Where(c => c.DataIscrizione >= DateTime.Now.AddDays(-7)).CountAsync();
         }
+
     }
 }

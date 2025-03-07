@@ -80,3 +80,4 @@ C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\bin\Debug\net8.0\Swashbuck
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\obj\Debug\net8.0\API.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\api\bin\Debug\net8.0\Bogus.dll

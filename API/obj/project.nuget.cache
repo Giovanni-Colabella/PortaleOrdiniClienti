@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "zW6vXq6XXGg=",
+  "dgSpecHash": "SjSKRjbwjrI=",
   "success": true,
   "projectFilePath": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\A570_Apulia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\A570_Apulia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\A570_Apulia\\.nuget\\packages\\bogus\\35.6.2\\bogus.35.6.2.nupkg.sha512",
     "C:\\Users\\A570_Apulia\\.nuget\\packages\\fluentvalidation\\12.0.0-preview1\\fluentvalidation.12.0.0-preview1.nupkg.sha512",
     "C:\\Users\\A570_Apulia\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\12.0.0-preview1\\fluentvalidation.dependencyinjectionextensions.12.0.0-preview1.nupkg.sha512",
     "C:\\Users\\A570_Apulia\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

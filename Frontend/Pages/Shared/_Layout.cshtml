@@ -8,67 +8,95 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Nunito', sans-serif;
         }
+        h1, h2, h3 {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .nav-link::after {
+            content: '';
+            display: block;
+            width: 0;
+            height: 2px;
+            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            transition: width 0.3s;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
     </style>
 </head>
-<body class="bg-gradient-to-r from-blue-50 via-blue-100 to-indigo-200 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 text-gray-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white shadow-lg border-b border-gray-300 fixed top-0 left-0 w-full z-20">
+    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-20 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-semibold text-indigo-600 hover:text-indigo-700 transition-colors duration-300">GestioneFacile ;)</a>
-                <div class="hidden sm:flex space-x-6 items-center">
-                    <a asp-page="/Index" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Home</a>
-                    <a asp-page="/Clienti/Index" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Clienti</a>
-                    <a asp-page="/Ordini/Index" class="text-gray-700 hover:text-indigo-600 transition-colors duration-300">Ordini</a>
-                    <a asp-page="/Account/Login" class="px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors duration-300">Accedi</a>
+                <a href="/" class="text-2xl font-bold gradient-text">GestioneFacile</a>
+                <div class="hidden sm:flex space-x-8 items-center">
+                    <a asp-page="/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Home</a>
+                    <a asp-page="/Clienti/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Clienti</a>
+                    <a asp-page="/Ordini/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Ordini</a>
+                    <a asp-page="/Account/Login" class="px-6 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105">Accedi</a>
                 </div>
-                <div class="sm:hidden">
-                    <button class="text-gray-700 hover:text-indigo-600 focus:outline-none focus:text-indigo-600" id="mobile-menu-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
-                    </button>
-                </div>
+                <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
             </div>
-            <div id="mobile-menu" class="sm:hidden hidden mt-2 space-y-2">
-                <a asp-page="/Index" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-md transition-colors duration-300">Home</a>
-                <a asp-page="/Clienti/Index" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-md transition-colors duration-300">Clienti</a>
-                <a asp-page="/Ordini/Index" class="block px-4 py-2 text-gray-700 hover:bg-gray-100 hover:text-indigo-600 rounded-md transition-colors duration-300">Ordini</a>
-                <a asp-page="/Account/Login" class="block px-4 py-2 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors duration-300">Accedi</a>
+            <div id="mobile-menu" class="sm:hidden hidden mt-4 space-y-2 transition-all duration-300">
+                <a asp-page="/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Home</a>
+                <a asp-page="/Clienti/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Clienti</a>
+                <a asp-page="/Ordini/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Ordini</a>
+                <a asp-page="/Account/Login" class="block mt-2 px-4 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center rounded-full hover:shadow-lg transition-all duration-300">Accedi</a>
             </div>
         </div>
     </nav>
 
-    <div class="container mx-auto px-6 py-12 flex-grow mt-20">
+    <main class="container mx-auto px-6 py-12 flex-grow mt-20">
         @RenderBody()
-    </div>
+    </main>
 
-    <footer class="bg-white shadow-lg border-t border-gray-300 py-6 mt-10">
-        <div class="flex justify-center items-center space-x-4">
-            <a href="https://www.facebook.com" class="text-gray-500 hover:text-indigo-600 transition-colors duration-300">
-                <i class="fab fa-facebook-f fa-lg"></i>
-            </a>
-            <a href="https://www.twitter.com" class="text-gray-500 hover:text-indigo-600 transition-colors duration-300">
-                <i class="fab fa-twitter fa-lg"></i>
-            </a>
-            <a href="https://github.com/Giovanni-Colabella" class="text-gray-500 hover:text-indigo-600 transition-colors duration-300">
-                <i class="fab fa-github fa-lg"></i>
-            </a>
+    <footer class="border-t border-gray-200 bg-white/80 backdrop-blur-md mt-20">
+        <div class="container mx-auto px-6 py-8">
+            <div class="flex flex-col items-center">
+                <div class="flex space-x-6 mb-6">
+                    <a href="https://www.facebook.com" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.twitter.com" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://github.com/Giovanni-Colabella" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm text-center mb-2">
+                    &copy; 2025 GestioneFacile - Tutti i diritti riservati.<br>
+                    <span class="text-gray-400">Sviluppato da &copy;Giovanni Colabella</span>
+                </p>
+            </div>
         </div>
-        <p class="text-gray-600 text-center mt-4 text-sm">&copy; 2025 GestioneFacile - Tutti i diritti riservati.</p>
-        <p class="text-gray-400 text-center text-xs">Sviluppato da &copy;Giovanni Colabella</p>
     </footer>
 
     <script>
         const menuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
+        let menuOpen = false;
+
         menuBtn.addEventListener('click', () => {
+            menuOpen = !menuOpen;
             mobileMenu.classList.toggle('hidden');
+            menuBtn.classList.toggle('text-indigo-600');
+            menuBtn.querySelector('svg').style.transform = menuOpen ? 'rotate(90deg)' : 'rotate(0)';
         });
     </script>
 

@@ -1,5 +1,6 @@
 ﻿using API.Models;
 using API.Models.Services.Application;
+using API.Models.ValueObjects;
 using API.Services;
 
 using FluentValidation;
@@ -45,14 +46,14 @@ namespace API.Controllers
         public async Task<IActionResult> CreateCliente(ClienteDto clienteDto)
         {
             var validationResult = await _clienteDtoValidator.ValidateAsync(clienteDto);
-            if(!validationResult.IsValid)
+            if (!validationResult.IsValid)
             {
                 var errorMessages = validationResult.Errors.Select(e => e.ErrorMessage).ToList();
                 return BadRequest(new { Errors = errorMessages });
             }
 
             var result = await _clienteService.CreateClienteAsync(clienteDto);
-            
+
             return Ok(result);
         }
 
@@ -86,7 +87,7 @@ namespace API.Controllers
         [HttpGet("search")]
         public async Task<IActionResult> Search([FromQuery] string keyword)
         {
-            try 
+            try
             {
                 var clienti = await _clienteService.SearchAsync(keyword);
                 return Ok(clienti);
@@ -96,5 +97,33 @@ namespace API.Controllers
                 return NotFound(ex.Message);
             }
         }
+
+        [HttpGet("genera")]
+        public IActionResult GeneraClientiRandom()
+        {
+
+            var clientiGenerati = GeneratoreDati.GeneraClienti(357);
+
+            var clienti = clientiGenerati.Select(cg => new Cliente
+            {
+                Nome = cg.Nome,
+                Cognome = cg.Cognome,
+                Email = cg.Email,
+                NumeroTelefono = cg.NumeroTelefono,
+                Indirizzo = cg.Indirizzo,  
+                Status = cg.Status, 
+                DataIscrizione = cg.DataIscrizione
+            }).ToList();
+
+
+            _context.AddRange(clienti);
+
+            _context.SaveChanges();
+
+            // Ritorna i clienti appena generati
+            return Ok(clienti);
+        }
+
+
     }
 }

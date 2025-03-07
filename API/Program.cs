@@ -21,8 +21,7 @@ builder.Services.AddSwaggerGen( options => {
         Contact = new OpenApiContact
         {
             Name = "Giovanni Colabella",
-            Email = "giovanni@example.com",
-            Url = new Uri("https://www.example.com")
+            Email = "giovannicolabell@gmail.com",
         }
     });
 });
@@ -38,8 +37,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer("name=DefaultConnection");
 });
 
-builder.Services.AddTransient<IClienteService, EfCoreClienteService>();
-builder.Services.AddTransient<IOrdineService, EfCoreOrdineService>();
+builder.Services.AddScoped<IClienteService, EfCoreClienteService>();
+builder.Services.AddScoped<IOrdineService, EfCoreOrdineService>();
 
 var app = builder.Build();
 

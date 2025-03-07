@@ -26,7 +26,8 @@ public class OrdineDtoValidator : AbstractValidator<OrdineDto>
 
 
         RuleFor(input => input.DataOrdine).NotEmpty().WithMessage("Il campo DataOrdine è obbligatorio.")
-            .LessThanOrEqualTo(DateTime.Now).WithMessage("Il campo DataOrdine non può essere nel futuro.");
+            .LessThanOrEqualTo(DateTime.Now).WithMessage("Il campo DataOrdine non può essere nel futuro.")
+            .GreaterThan(DateTime.Now.AddYears(-100)).WithMessage("Il campo DataOrdine non può essere troppo nel passato");
 
         RuleFor(input => input.Stato).NotEmpty().WithMessage("Il campo Stato è obbligatorio.")
             .Matches(@"^(In elaborazione|Spedito|Consegnato|Annullato)$").WithMessage("Lo stato dell'ordine deve essere 'In elaborazione', 'Spedito', 'Consegnato' o 'Annullato'");

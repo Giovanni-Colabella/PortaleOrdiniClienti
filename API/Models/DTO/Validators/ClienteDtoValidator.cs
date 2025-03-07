@@ -46,7 +46,8 @@ public class ClienteDtoValidator : AbstractValidator<ClienteDto>
         RuleFor(input => input.DataIscrizione)
             .NotEmpty().WithMessage("Il campo 'DataIscrizione' è obbligatorio")
             .LessThan(DateTime.Now)
-            .WithMessage("La data di iscrizione non può essere nel futuro");
+            .WithMessage("La data di iscrizione non può essere nel futuro")
+            .GreaterThan(DateTime.Now.AddYears(-100)).WithMessage("La data di iscrizione non può essere troppo indietro nel tempo");
         
     }
 }

@@ -17,7 +17,6 @@ public class IndexModel : PageModel
     }
 
     public Stats? Stats {get; set;} = new Stats();
-
     public async Task OnGet()
     {
         var response = await _httpClient.GetAsync("http://localhost:5150/api/home");
