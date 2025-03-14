@@ -3,20 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\frontend\\pages\\clienti\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|solutionrelative:frontend\\pages\\clienti\\edit.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\frontend\\wwwroot\\js\\autenticato.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|solutionrelative:frontend\\wwwroot\\js\\autenticato.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\controllers\\clienticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\controllers\\clienticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\frontend\\pages\\clienti\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|solutionrelative:frontend\\pages\\clienti\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\models\\services\\application\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\models\\services\\application\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\models\\dto\\validators\\clientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\models\\dto\\validators\\clientedtovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\frontend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|solutionrelative:frontend\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\frontend\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE63D8F1-C659-4138-AFDA-A1E0340BCC7D}|Frontend\\Frontend.csproj|solutionrelative:frontend\\pages\\index.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|c:\\users\\a570_apulia\\desktop\\portaleordiniclienti\\api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F00BB564-0E86-483E-AFFA-1981A49C6341}|API\\API.csproj|solutionrelative:api\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,59 +38,93 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Clienti\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Frontend\\Pages\\Clienti\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Clienti\\Edit.cshtml",
-              "RelativeToolTip": "Frontend\\Pages\\Clienti\\Edit.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-03T11:39:12.887Z",
+              "DocumentIndex": 0,
+              "Title": "autenticato.js",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+              "RelativeDocumentMoniker": "Frontend\\wwwroot\\js\\autenticato.js",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+              "RelativeToolTip": "Frontend\\wwwroot\\js\\autenticato.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-14T18:38:14.958Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Index.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Index.cshtml.cs",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Index.cshtml.cs",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Index.cshtml.cs",
+              "RelativeToolTip": "Frontend\\Pages\\Index.cshtml.cs",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAkwF0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T11:15:14.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Frontend\\Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Frontend\\Pages\\Index.cshtml",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAiwG0AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-14T11:15:13.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "API\\Controllers\\DashboardController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-14T10:01:29.628Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ClienteDtoValidator.cs",
-              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Models\\DTO\\Validators\\ClienteDtoValidator.cs",
-              "RelativeDocumentMoniker": "API\\Models\\DTO\\Validators\\ClienteDtoValidator.cs",
-              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Models\\DTO\\Validators\\ClienteDtoValidator.cs",
-              "RelativeToolTip": "API\\Models\\DTO\\Validators\\ClienteDtoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAAAFgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T11:01:16.489Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T09:59:12.261Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ClientiController.cs",
-              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\ClientiController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ClientiController.cs",
-              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\ClientiController.cs",
-              "RelativeToolTip": "API\\Controllers\\ClientiController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAAFIAAABYAAAAAAAAAA==",
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "API\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAYwHcAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T12:13:30.043Z",
+              "WhenOpened": "2025-03-14T09:52:03.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Edit.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Clienti\\Edit.cshtml.cs",
-              "RelativeDocumentMoniker": "Frontend\\Pages\\Clienti\\Edit.cshtml.cs",
-              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\Pages\\Clienti\\Edit.cshtml.cs",
-              "RelativeToolTip": "Frontend\\Pages\\Clienti\\Edit.cshtml.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAowBUAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Models\\Services\\Application\\AuthService.cs",
+              "RelativeDocumentMoniker": "API\\Models\\Services\\Application\\AuthService.cs",
+              "ToolTip": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\API\\Models\\Services\\Application\\AuthService.cs",
+              "RelativeToolTip": "API\\Models\\Services\\Application\\AuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T12:05:36.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-14T09:48:26.831Z"
             }
           ]
         }

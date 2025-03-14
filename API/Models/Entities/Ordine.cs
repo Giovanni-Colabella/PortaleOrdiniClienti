@@ -16,4 +16,7 @@ public class Ordine
     // Proprietà di navigazione
     public Cliente Cliente { get; set; } = null!; // Ho usato il null forgiving operator per specificare che sono sicuro che questa var non sarà mai nulla
 
+
+    // Relazione many-to-many con Prodotto 
+    public List<DettaglioOrdine> DettagliOrdini { get; set; } = new();
 }

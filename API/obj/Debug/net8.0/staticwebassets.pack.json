@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_10_c2d0d9ca59fb4c0798671afaced3b7ce.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_10_c2d0d9ca59fb4c0798671afaced3b7ce.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_11_cee93093f5514547b623b6db2d2be659.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_11_cee93093f5514547b623b6db2d2be659.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_12_a8f0e7889b7744239e07c66ed57db9b2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_12_a8f0e7889b7744239e07c66ed57db9b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_13_9bfe9a89bc6d44fca1ab89c79277f096.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_13_9bfe9a89bc6d44fca1ab89c79277f096.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_14_cc0d93453ae640daa1ec5aa332b03c95.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_14_cc0d93453ae640daa1ec5aa332b03c95.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_15_79eec221833741ba8f0a9e1cdd48e87e.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_15_79eec221833741ba8f0a9e1cdd48e87e.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_16_5f990f0780aa4091a02fc299642e57af.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_16_5f990f0780aa4091a02fc299642e57af.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_17_164984a89b9744a2a202363fb7e369aa.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_17_164984a89b9744a2a202363fb7e369aa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_8_5de840de13ef4e46bb6b925d54e474e2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_8_5de840de13ef4e46bb6b925d54e474e2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_9_dfe0d224ef3c4809a433bd82a25d4e99.jpg",
+      "PackagePath": "staticwebassets\\uploads\\prodotti\\prod_9_dfe0d224ef3c4809a433bd82a25d4e99.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.API.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.API.props",
+      "PackagePath": "build\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.API.props",
+      "PackagePath": "buildMultiTargeting\\API.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.API.props",
+      "PackagePath": "buildTransitive\\API.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

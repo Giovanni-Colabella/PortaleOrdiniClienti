@@ -1,23 +1,24 @@
 using API.Models.Services.Application;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-
 namespace API.Controllers
-{
+{   
     [Route("api/[controller]")]
     [ApiController]
-    public class HomeController : ControllerBase
+    public class DashboardController : ControllerBase
     {
         private readonly IClienteService _clienteService;
         private readonly IOrdineService _ordineService;
-        public HomeController(
+        public DashboardController(
             IClienteService clienteService,
             IOrdineService ordineService)
         {
             _clienteService = clienteService;
             _ordineService = ordineService;
         }
-        
+
+        [Authorize(Roles = "Admin")]
         [HttpGet]
         public async Task<IActionResult> Index()
         {

@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - EasyShop</title>
+
+    <!-- Link a Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Nunito:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body class="bg-gradient-to-br from-indigo-50 via-purple-50 to-pink-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <nav class="bg-white/80 backdrop-blur-md shadow-md fixed top-0 left-0 w-full z-20 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/"
+                class="text-3xl font-bold text-transparent bg-gradient-to-r from-indigo-500 to-purple-600 bg-clip-text">EasyShop</a>
+
+            <!-- Bottone mobile per il menu -->
+            <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-100">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+
+            <!-- Menu per desktop -->
+            <div class="hidden sm:flex space-x-6 items-center" id="desktop-menu">
+                <a href="/" class="text-gray-600 hover:text-gray-900">Home</a>
+                <a href="/Contatti" class="text-gray-600 hover:text-gray-900">Contatti</a>
+                <a asp-page="/Auth/Registrati"
+                    class="px-4 py-2 text-sm bg-indigo-500 text-white rounded hover:bg-indigo-600">Registrati</a>
+                <!-- Link Logout che apre il modal -->
+                <a href="#" id="logoutButton" class="text-gray-600 hover:text-gray-900 text-xl hidden">
+                    <i class="fas fa-sign-out-alt text-red-600"></i> Esci
+                </a>
+                <a asp-page="/Auth/Login" id="loginButton" class="text-gray-600 hover:text-gray-900 text-xl hidden">
+                    <i class="fas fa-sign-in-alt text-blue-600"></i> Accedi
+                </a>
+            </div>
+
+            <!-- Menu per mobile -->
+            <div id="mobile-menu" class="sm:hidden hidden mt-4 space-y-2">
+                <a asp-page="/" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Home</a>
+                <a asp-page="/Contatti" class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Contatti</a>
+                <a asp-page="/Auth/Registrati"
+                    class="block px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg">Registrati</a>
+                <!-- Logout anche per mobile -->
+                <a href="#" id="logoutButtonMobile"
+                    class="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg text-xl hidden">
+                    <i class="fas fa-sign-out-alt text-red-600"></i> Logout
+                </a>
+                <a asp-page="/Auth/Login" id="loginButtonMobile" class="text-gray-600 hover:text-gray-900 text-xl hidden">
+                    <i class="fas fa-sign-in-alt text-blue-600"></i> Accedi
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal di conferma logout -->
+    <div id="logoutModal" class="fixed inset-0 flex items-center justify-center z-50 hidden">
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-gray-900 opacity-50"></div>
+        <!-- Contenuto del modal -->
+        <div class="bg-white rounded-lg shadow-lg p-6 z-10 w-11/12 sm:w-96">
+            <h2 class="text-xl font-bold mb-4"><i class="fas fa-sign-out-alt text-red-600"></i>
+                Esci</h2>
+            <p class="mb-6">Vuoi veramente uscire dall'account?</p>
+            <div class="flex justify-end space-x-4">
+                <button id="cancelLogout"
+                    class="px-4 py-2 bg-gray-300 text-gray-700 rounded hover:bg-gray-400">Annulla</button>
+                <button id="confirmLogout"
+                    class="px-4 py-2 bg-red-600 text-white rounded hover:bg-red-700">Esci</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-12 flex-grow mt-20">
+        @RenderBody()
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-200 bg-white/80 backdrop-blur-md mt-20 py-8 text-center text-gray-500">
+        <p>&copy; 2025 EasyShop Inc. - Tutti i diritti riservati.</p>
+    </footer>
+
+    <!-- Script per il menu mobile e gestione autenticazione -->
+    <script>
+
+        // script che mostra 'esci' se l'utente è autenticato altrimenti mostra 'accedi'
+        document.addEventListener("DOMContentLoaded", async () => {
+            const autenticato = await checkAuth();
+            console.log("Stato autenticazione: " +autenticato)
+
+            if (autenticato) {
+                // Mostra il logout, nascondi il login
+                document.getElementById('logoutButton').classList.remove('hidden');
+                document.getElementById('logoutButtonMobile').classList.remove('hidden');
+                document.getElementById('loginButton').classList.add('hidden');
+                document.getElementById('loginButtonMobile').classList.add('hidden');
+            } else {
+                // Mostra il login, nascondi il logout
+                document.getElementById('logoutButton').classList.add('hidden');
+                document.getElementById('logoutButtonMobile').classList.add('hidden');
+                document.getElementById('loginButton').classList.remove('hidden');
+                document.getElementById('loginButtonMobile').classList.remove('hidden');
+            }
+        });
+
+
+        // Gestione menu mobile
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Elementi per il logout
+        const logoutButton = document.getElementById('logoutButton');
+        const logoutButtonMobile = document.getElementById('logoutButtonMobile');
+        const logout = document.getElementById('logoutModal');
+        const cancelLogout = document.getElementById('cancelLogout');
+        const confirmLogout = document.getElementById('confirmLogout');
+
+        // Apertura del modal al click sul logout (desktop)
+        logoutButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            logout.classList.toggle('hidden');
+        });
+
+        // Apertura del modal al click sul logout (mobile)
+        logoutButtonMobile.addEventListener('click', (e) => {
+            e.preventDefault();
+            logout.classList.toggle('hidden');
+        });
+
+        // Chiusura del modal con il pulsante "Annulla"
+        cancelLogout.addEventListener('click', () => {
+            logout.classList.toggle('hidden');
+        });
+
+        // Conferma logout: reindirizza all'endpoint di logout
+        confirmLogout.addEventListener('click', () => {
+
+            window.location.href = '/Auth/Logout';
+        });
+
+    </script>
+
+    <script src="~/js/autenticato.js"></script>
+
+</body>
+
+</html>

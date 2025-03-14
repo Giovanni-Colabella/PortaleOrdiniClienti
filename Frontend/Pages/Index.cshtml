@@ -1,82 +1,110 @@
 ﻿@page
-@model IndexModel
+@model Frontend.Pages.Prodotti.IndexModel
+
 @{
-    ViewData["Title"] = "Home page";
+    Layout = "_LayoutHome";
+    ViewData["Title"] = "Lista Prodotti";
 }
 
-<div class="text-center mb-12">
-    <h1 class="font-extrabold text-4xl sm:text-5xl text-indigo-700 mb-4">GestioneFacile ti dà il benvenuto ;)</h1>
-    <p class="font-medium text-lg text-gray-600">Scegli cosa vuoi fare oggi:</p>
-</div>
-
-<!-- Statistiche  -->
-<div class="container mx-auto px-6 py-10 text-center">
-    
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="bg-white p-6 rounded-lg shadow-xl">
-            <i class="fas fa-id-badge" style="font-size: 48px; color: #a10fced0;"></i>
-            <h2 class="text-xl font-semibold text-indigo-700">Clienti Registrati</h2>
-            <p class="text-2xl font-bold text-gray-800">@Model.Stats.AllClienti</p>
-            <p class="text-gray-600">Numero totale di clienti registrati nel database.</p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-xl">
-            <i class="fas fa-boxes" style="font-size: 48px; color: #e74c3c;"></i>
-            <h2 class="text-xl font-semibold text-orange-600">Ordini Completati</h2>
-            <p class="text-2xl font-bold text-gray-800">@Model.Stats.AllOrdini</p>
-            <p class="text-gray-600">Numero totale di ordini nel database </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-xl">
-            <i class="fas fa-users" style="font-size: 48px; color: #49c249;"></i>
-            <h2 class="text-xl font-semibold text-teal-600">Registrazioni Recenti</h2>
-            <p class="text-2xl font-bold text-gray-800">@Model.Stats.WeeklyClienti</p>
-            <p class="text-gray-600">Nuove registrazioni nella settimana corrente</p>
-        </div>
+<div class="container mx-auto px-4 py-12">
+    <!-- Titolo -->
+    <div class="text-center mb-12">
+        <h1 class="text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent inline-block">
+            <i class="fas fa-box-open mr-4"></i>@ViewData["Title"]
+        </h1>
     </div>
-</div>
 
-
-
-<div class="container mx-auto px-6 py-10 flex-grow">
-    <!-- Griglia di Card -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-6">
-        <!-- Card Clienti -->
-        <div class="bg-gradient-to-r from-indigo-400 via-indigo-500 to-indigo-600 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
-            <div class="mb-4">
-                <i class="fas fa-users fa-3x mb-4"></i>
-                <h3 class="text-xl font-semibold mb-4">Visualizza Clienti</h3>
-                <p class="text-md">Gestisci e visualizza tutti i clienti registrati.</p>
+    <!-- Ricerca  -->
+    <div class="max-w-3xl mx-auto mb-16">
+        <form method="get" class="flex items-center bg-white rounded-2xl shadow-xl p-2 transition-all duration-300 hover:shadow-2xl">
+            <div class="flex-1">
+                <input type="text" name="search"
+                       class="w-full px-6 py-4 border-0 text-lg focus:ring-2 focus:ring-blue-400 rounded-2xl"
+                       placeholder="Cerca il tuo prodotto..."
+                       value="@Model.Search" />
             </div>
-            <a asp-page="/Clienti/Index" class="text-center text-white bg-indigo-800 hover:bg-indigo-900 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Vai ai Clienti</a>
-        </div>
+            <button type="submit" class="ml-4 p-4 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-transform duration-300 transform hover:scale-105">
+                <i class="fas fa-search text-xl"></i>
+            </button>
+        </form>
+    </div>
 
-        <!-- Card Aggiungi Cliente -->
-        <div class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
-            <div class="mb-4">
-                <i class="fas fa-user-plus fa-3x mb-4"></i>
-                <h3 class="text-xl font-semibold mb-4">Aggiungi un nuovo cliente</h3>
-                <p class="text-md">Aggiungi un nuovo cliente nel database.</p>
-            </div>
-            <a asp-page="/Clienti/Create" class="text-center text-white bg-teal-700 hover:bg-teal-800 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Crea un cliente</a>
-        </div>
+    <!-- Griglia prodotti  -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 px-8">
+        @foreach (var prodotto in Model.Prodotti)
+        {
+            <div class="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col h-full">
+                <!-- Badge novità -->
+                @if (prodotto.Giacenza > 0)
+                {
+                    <div class="absolute right-4 top-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-sm">
+                        <i class="fas fa-certificate mr-2"></i>Disponibile
+                    </div>
+                }
 
-        <!-- Card Ordini -->
-        <div class="bg-gradient-to-r from-orange-400 via-orange-500 to-orange-600 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
-            <div class="mb-4">
-                <i class="fas fa-box-open fa-3x mb-4"></i>
-                <h3 class="text-xl font-semibold mb-4">Visualizza Ordini</h3>
-                <p class="text-md">Gestisci e visualizza tutti gli ordini registrati.</p>
-            </div>
-            <a asp-page="/Ordini/Index" class="text-center text-white bg-orange-700 hover:bg-orange-800 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Visualizza gli ordini</a>
-        </div>
+                <!-- Immagine prodotto -->
+                <div class="relative h-60 overflow-hidden rounded-t-2xl">
+                    <img src="@Model.GetImmagineUrl(prodotto.ImgPath)"
+                         alt="@Model.Truncate(prodotto.NomeProdotto, 20)"
+                         class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" />
+                </div>
 
-        <!-- Card Aggiungi Ordine -->
-        <div class="bg-gradient-to-r from-gray-400 via-gray-500 to-gray-600 text-white shadow-xl hover:shadow-2xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
-            <div class="mb-4">
-                <i class="fas fa-cart-plus fa-3x mb-4"></i>
-                <h3 class="text-xl font-semibold mb-4">Crea un nuovo ordine</h3>
-                <p class="text-md">Aggiungi un nuovo ordine nel database.</p>
+                <!-- Contenuto card -->
+                <div class="p-6 flex flex-col flex-grow">
+                    <div class="mb-4">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">
+                            <i class="fas fa-tag text-blue-500 mr-2"></i>
+                            @Model.Truncate(prodotto.NomeProdotto, 24)
+                        </h3>
+                        <p class="text-sm text-gray-500 mb-3">
+                            <i class="fas fa-layer-group text-purple-500 mr-2"></i>
+                            @prodotto.Categoria
+                        </p>
+                    </div>
+
+                    <div class="mt-auto">
+                        <div class="flex justify-between items-center mb-4">
+                            <p class="text-2xl font-bold text-blue-600">
+                                @prodotto.Prezzo.ToString("C", System.Globalization.CultureInfo.CurrentCulture)
+                            </p>
+                            <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">
+                                <i class="fas fa-warehouse mr-2"></i>@prodotto.Giacenza
+                            </span>
+                        </div>
+
+                        <!-- Pulsante acquisto  -->
+                        <div class="text-center">
+                            <button class="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-3 rounded-xl
+                                      hover:scale-105 transition-transform duration-300 shadow-md
+                                      flex items-center justify-center gap-2">
+                                <i class="fas fa-cart-plus text-lg"></i>
+                                Aggiungi al Carrello
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <a asp-page="/Ordini/Create" class="text-center text-white bg-gray-700 hover:bg-gray-800 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Crea un ordine</a>
-        </div>
+        }
+    </div>
+
+    <!-- Paginazione migliorata -->
+    <div class="mt-16 flex justify-center items-center">
+        <nav class="flex items-center space-x-4">
+            <a href="?page=@(Model.CurrentPage - 1)&search=@Model.Search"
+               class="px-5 py-3 bg-white text-gray-600 rounded-full shadow-md hover:shadow-lg transition-all
+                      @(Model.CurrentPage <= 1 ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-50")">
+                <i class="fas fa-chevron-left"></i>
+            </a>
+
+            <span class="px-4 py-2 bg-blue-600 text-white rounded-full shadow-md">
+                Pagina @Model.CurrentPage
+            </span>
+
+            <a href="?page=@(Model.CurrentPage + 1)&search=@Model.Search"
+               class="px-5 py-3 bg-white text-gray-600 rounded-full shadow-md hover:shadow-lg transition-all
+                      @(Model.CurrentPage >= Model.TotalPages ? "opacity-50 cursor-not-allowed" : "hover:bg-blue-50")">
+                <i class="fas fa-chevron-right"></i>
+            </a>
+        </nav>
     </div>
 </div>
