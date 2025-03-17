@@ -7,23 +7,19 @@ async function checkAuth() {
     try {
         const response = await fetch("http://localhost:5150/api/auth/isAuthenticated", {
             method: "GET",
-            credentials: "include" // per i cookie
+            credentials: "include"
         });
 
-        // Se non autorizzato, return false 
         if (response.status === 401) {
             return false;
         }
 
-        // Controlla se la risposta HTTP è OK 
         if (!response.ok) {
             console.error("Errore HTTP:", response.status);
             return false;
         }
 
-        const result = await response.json();
-        
-        return result;
+        return true;
 
     } catch (error) {
         console.error("Errore nella richiesta:", error);

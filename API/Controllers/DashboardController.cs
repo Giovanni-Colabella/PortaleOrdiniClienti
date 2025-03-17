@@ -18,7 +18,8 @@ namespace API.Controllers
             _ordineService = ordineService;
         }
 
-        [Authorize(Roles = "Admin")]
+        // [Authorize(Roles = "Admin")]
+        [Authorize]
         [HttpGet]
         public async Task<IActionResult> Index()
         {

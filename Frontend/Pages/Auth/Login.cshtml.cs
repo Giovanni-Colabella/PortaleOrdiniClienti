@@ -36,44 +36,44 @@ namespace Frontend.Pages.Auth
         {
         }
 
-        public async Task<IActionResult> OnPostAsync()
-        {
-            var request = new StringContent(
-                JsonConvert.SerializeObject(Input),
-                Encoding.UTF8,
-                "application/json"
-            );
+        // public async Task<IActionResult> OnPostAsync()
+        // {
+        //     var request = new StringContent(
+        //         JsonConvert.SerializeObject(Input),
+        //         Encoding.UTF8,
+        //         "application/json"
+        //     );
 
-            var response = await _httpClient.PostAsync("http://localhost:5150/api/Auth/login", request);
+        //     var response = await _httpClient.PostAsync("http://localhost:5150/api/Auth/login", request);
 
-            if (response.IsSuccessStatusCode)
-                return RedirectToPage("/Index");
+        //     if (response.IsSuccessStatusCode)
+        //         return RedirectToPage("/Index");
 
-            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-            {
-                var errorContent = await response.Content.ReadAsStringAsync();
+        //     if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
+        //     {
+        //         var errorContent = await response.Content.ReadAsStringAsync();
 
-                try
-                {
-                    var validationErrors = JsonConvert.DeserializeObject<ValidationErrors>(errorContent);
+        //         try
+        //         {
+        //             var validationErrors = JsonConvert.DeserializeObject<ValidationErrors>(errorContent);
 
-                    if (validationErrors?.Errors != null)
-                    {
-                        ListValidationErrors.AddRange(validationErrors.Errors);
-                    }
-                    else
-                    {
-                        ListValidationErrors.Add("Errore generico dal server");
-                    }
-                }
-                catch
-                {
-                    ListValidationErrors.Add("Errore nel formato della risposta");
-                }
-                return Page();
-            }
+        //             if (validationErrors?.Errors != null)
+        //             {
+        //                 ListValidationErrors.AddRange(validationErrors.Errors);
+        //             }
+        //             else
+        //             {
+        //                 ListValidationErrors.Add("Errore generico dal server");
+        //             }
+        //         }
+        //         catch
+        //         {
+        //             ListValidationErrors.Add("Errore nel formato della risposta");
+        //         }
+        //         return Page();
+        //     }
 
-            return Page();
-        }
+        //     return Page();
+        // }
     }
 }

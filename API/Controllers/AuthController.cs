@@ -1,13 +1,15 @@
-﻿using API.Models.DTO;
+﻿using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
+
+using API.Models.DTO;
+using API.Models.Entities;
 using API.Models.Services.Application;
 
 using FluentValidation;
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
 
 [ApiController]
 [Route("api/[controller]")]
@@ -73,88 +75,72 @@ public class AuthController : ControllerBase
             return Unauthorized("Invalid credentials.");
         }
 
-        var roles = await _authService.GetRolesAsync(user);
+        var token = GenerateJwtToken(user);
 
-        var claims = new List<Claim>
-        {
-            new Claim(JwtRegisteredClaimNames.Sub, user.Id),
-            new Claim(JwtRegisteredClaimNames.Email, user.Email!),
-            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
-        };
-
-        foreach (var role in roles)
-            claims.Add(new Claim(ClaimTypes.Role, role));
-
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]!));
-        var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-        var expires = DateTime.UtcNow.AddMinutes(Convert.ToDouble(_configuration["Jwt:ExpireMinutes"]));
-
-        var token = new JwtSecurityToken(
-            issuer: _configuration["Jwt:Issuer"],
-            audience: _configuration["Jwt:Audience"],
-            claims: claims,
-            expires: expires,
-            signingCredentials: creds
-        );
-
-        var tokenString = new JwtSecurityTokenHandler().WriteToken(token);
-
-        // Imposta il token nel cookie direttamente nel controller
-        var cookieOptions = new CookieOptions
+        Response.Cookies.Append("jwtToken", token, new CookieOptions
         {
             HttpOnly = true,
-            Expires = expires
-        };
+            Secure = false,
+            SameSite = SameSiteMode.Lax,
+            Expires = DateTime.Now.AddHours(1)
+        });
 
-        Response.Cookies.Append("jwtToken", tokenString, cookieOptions);
-
-        return Ok(new { Token = tokenString });
+        return Ok();
     }
 
-    
+
     [HttpPost("logout")]
-    public IActionResult Logout()
+    public async Task<IActionResult> Logout()
     {
         var token = Request.Cookies["jwtToken"];
         if (!string.IsNullOrEmpty(token))
         {
             _tokenBlacklist.Add(token);
         }
-        
+
         Response.Cookies.Delete("jwtToken");
         return Ok("Logout effettuato");
     }
-
 
 
     [HttpGet("IsAuthenticated")]
     public IActionResult IsAuthenticated()
     {
         var token = Request.Cookies["jwtToken"];
-        
+        Console.WriteLine($"Token ricevuto: {token}");
+
         if (string.IsNullOrEmpty(token) || _tokenBlacklist.IsRevoked(token))
-            return Ok(false);
-
-        try 
         {
-            var validationParameters = new TokenValidationParameters
-            {
-                ValidateIssuer = true,
-                ValidateAudience = true,
-                ValidateLifetime = true,
-                ValidateIssuerSigningKey = true,
-                ValidIssuer = _configuration["Jwt:Issuer"],
-                ValidAudience = _configuration["Jwt:Audience"],
-                IssuerSigningKey = new SymmetricSecurityKey(
-                    Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]))
-            };
+            Console.WriteLine("Token non valido o revocato");
+            return Unauthorized();
+        }
 
-            new JwtSecurityTokenHandler().ValidateToken(token, validationParameters, out _);
-            return Ok(true);
-        }
-        catch 
-        {
-            return Ok(false);
-        }
+        Console.WriteLine("Token valido");
+        return Ok(true);
     }
+
+    private string GenerateJwtToken(ApplicationUser user)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+        var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!);
+
+        var claims = new List<Claim>
+        {
+            new Claim(ClaimTypes.Name, user.UserName),
+            new Claim(ClaimTypes.NameIdentifier, user.Id),
+            new Claim(ClaimTypes.Email, user.Email)
+        };
+
+        var tokenDescriptor = new SecurityTokenDescriptor
+        {
+            Subject = new ClaimsIdentity(claims),
+            Expires = DateTime.UtcNow.AddHours(1),
+            SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256)
+        };
+
+        var token = tokenHandler.CreateToken(tokenDescriptor);
+        return tokenHandler.WriteToken(token);
+    }
+
 }
+

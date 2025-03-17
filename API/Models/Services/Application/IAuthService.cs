@@ -10,5 +10,4 @@ public interface IAuthService
     Task<ApplicationUser> FindUserAsync(string email);
     Task<IList<string>> GetRolesAsync(ApplicationUser user);
     Task<bool> CheckPasswordAsync(ApplicationUser user, string password);
-    Task LogoutFromAccountAsync();
 }

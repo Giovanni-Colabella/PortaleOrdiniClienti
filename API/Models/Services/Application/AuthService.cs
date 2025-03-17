@@ -35,13 +35,13 @@ namespace API.Models.Services.Application
             if (result.Succeeded)
             {
                 // Verifica esistenza ruolo e creazione se necessario
-                if (!await _roleManager.RoleExistsAsync("Admin"))
+                if (!await _roleManager.RoleExistsAsync("User"))
                 {
-                    await _roleManager.CreateAsync(new IdentityRole("Admin"));
+                    await _roleManager.CreateAsync(new IdentityRole("User"));
                 }
 
                 // Aggiungi ruolo all'utente
-                var roleResult = await _userManager.AddToRoleAsync(user, "Admin");
+                var roleResult = await _userManager.AddToRoleAsync(user, "User");
                 if (!roleResult.Succeeded)
                 {
                     foreach (var error in roleResult.Errors)
@@ -67,9 +67,5 @@ namespace API.Models.Services.Application
             return await _userManager.CheckPasswordAsync(user, password);
         }
 
-        public async Task LogoutFromAccountAsync()
-        {
-            await _signInManager.SignOutAsync();
-        }
     }
 }

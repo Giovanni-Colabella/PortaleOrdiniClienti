@@ -14,9 +14,9 @@ namespace Frontend.Pages.Auth
             _httpClient = httpClient;
         }
 
-        public async Task<IActionResult> OnGetAsync()
+        public async Task<IActionResult> OnPostAsync()
         {
-            var result = await _httpClient.PostAsync($"{_config["ApiUrl"]}api/auth/logout", null);
+            await _httpClient.PostAsync($"{_config["ApiUrl"]}api/auth/logout", null);
 
             return RedirectToPage("/Index");
         }
