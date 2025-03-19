@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "43IwqysqAzXPn+24tcTSSccGag0C4Hr2bpYRhQbdxA0=",
+  "Hash": "gLLUBDbbPXOb8rwmekw+AltwcghkWgx0cLRkjnGWgIg=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -332,12 +332,12 @@
       "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-rtm62dlidk.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
-      "RelativePath": "js/fetchWithCookies#[.{fingerprint=rtm62dlidk}]?.js.gz",
+      "RelativePath": "js/fetchWithCookies#[.{fingerprint=w3to57aplv}]?.js.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -346,8 +346,8 @@
       "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3fched10je",
-      "Integrity": "4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik=",
+      "Fingerprint": "zg62zsmq4z",
+      "Integrity": "vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js"
@@ -556,8 +556,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "rtm62dlidk",
-      "Integrity": "Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=",
+      "Fingerprint": "w3to57aplv",
+      "Integrity": "XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\fetchWithCookies.js"
@@ -1819,7 +1819,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1872,7 +1872,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1909,7 +1909,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1956,7 +1956,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2017,7 +2017,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2062,7 +2062,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 15 Mar 2025 15:55:40 GMT"
+          "Value": "Mon, 17 Mar 2025 18:11:42 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2094,12 +2094,12 @@
     },
     {
       "Route": "js/fetchWithCookies.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-rtm62dlidk.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004405286344"
+          "Quality": "0.004310344828"
         }
       ],
       "ResponseHeaders": [
@@ -2109,15 +2109,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "231"
         },
         {
           "Name": "ETag",
-          "Value": "\"4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik=\""
+          "Value": "\"vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2137,13 +2137,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=\""
+          "Value": "W/\"XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI="
+          "Value": "sha256-XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68="
         }
       ]
     },
@@ -2158,7 +2158,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "357"
+          "Value": "363"
         },
         {
           "Name": "Content-Type",
@@ -2166,11 +2166,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=\""
+          "Value": "\"XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2180,13 +2180,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI="
+          "Value": "sha256-XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68="
         }
       ]
     },
     {
       "Route": "js/fetchWithCookies.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-rtm62dlidk.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2195,7 +2195,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "231"
         },
         {
           "Name": "Content-Type",
@@ -2203,11 +2203,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik=\""
+          "Value": "\"vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2225,18 +2225,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik="
+          "Value": "sha256-vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY="
         }
       ]
     },
     {
-      "Route": "js/fetchWithCookies.rtm62dlidk.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-rtm62dlidk.gz",
+      "Route": "js/fetchWithCookies.w3to57aplv.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.004405286344"
+          "Quality": "0.004310344828"
         }
       ],
       "ResponseHeaders": [
@@ -2246,15 +2246,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "231"
         },
         {
           "Name": "ETag",
-          "Value": "\"4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik=\""
+          "Value": "\"vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2274,13 +2274,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=\""
+          "Value": "W/\"XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rtm62dlidk"
+          "Value": "w3to57aplv"
         },
         {
           "Name": "label",
@@ -2288,12 +2288,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI="
+          "Value": "sha256-XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68="
         }
       ]
     },
     {
-      "Route": "js/fetchWithCookies.rtm62dlidk.js",
+      "Route": "js/fetchWithCookies.w3to57aplv.js",
       "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2303,7 +2303,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "357"
+          "Value": "363"
         },
         {
           "Name": "Content-Type",
@@ -2311,11 +2311,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=\""
+          "Value": "\"XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2325,7 +2325,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rtm62dlidk"
+          "Value": "w3to57aplv"
         },
         {
           "Name": "label",
@@ -2333,13 +2333,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI="
+          "Value": "sha256-XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68="
         }
       ]
     },
     {
-      "Route": "js/fetchWithCookies.rtm62dlidk.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-rtm62dlidk.gz",
+      "Route": "js/fetchWithCookies.w3to57aplv.js.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2348,7 +2348,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "226"
+          "Value": "231"
         },
         {
           "Name": "Content-Type",
@@ -2356,11 +2356,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik=\""
+          "Value": "\"vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 17 Mar 2025 13:21:44 GMT"
+          "Value": "Mon, 17 Mar 2025 13:45:21 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2378,7 +2378,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "rtm62dlidk"
+          "Value": "w3to57aplv"
         },
         {
           "Name": "label",
@@ -2386,7 +2386,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4XSoFhHOaqrhI4xxyxWBJ6xJYrcXkSYmAujbPZQmjik="
+          "Value": "sha256-vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY="
         }
       ]
     },

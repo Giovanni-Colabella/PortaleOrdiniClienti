@@ -59,7 +59,8 @@
                     class="px-4 py-3 text-gray-600 hover:bg-gray-50 rounded-lg text-xl hidden">
                     <i class="fas fa-sign-out-alt text-red-600"></i> Logout
                 </a>
-                <a asp-page="/Auth/Login" id="loginButtonMobile" class="text-gray-600 hover:text-gray-900 text-xl hidden">
+                <a asp-page="/Auth/Login" id="loginButtonMobile"
+                    class="text-gray-600 hover:text-gray-900 text-xl hidden">
                     <i class="fas fa-sign-in-alt text-blue-600"></i> Accedi
                 </a>
             </div>
@@ -94,13 +95,15 @@
         <p>&copy; 2025 EasyShop Inc. - Tutti i diritti riservati.</p>
     </footer>
 
+    
+
     <!-- Script per il menu mobile e gestione autenticazione -->
     <script>
 
         // script che mostra 'esci' se l'utente è autenticato altrimenti mostra 'accedi'
         document.addEventListener("DOMContentLoaded", async () => {
             const autenticato = await checkAuth();
-            console.log("Stato autenticazione: " +autenticato)
+            console.log("Stato autenticazione: " + autenticato);
 
             if (autenticato) {
                 // Mostra il logout, nascondi il login
@@ -116,7 +119,6 @@
                 document.getElementById('loginButtonMobile').classList.remove('hidden');
             }
         });
-
 
         // Gestione menu mobile
         const menuBtn = document.getElementById('mobile-menu-btn');
@@ -149,11 +151,30 @@
             logout.classList.toggle('hidden');
         });
 
-        // Conferma logout: reindirizza all'endpoint di logout
-        confirmLogout.addEventListener('click', () => {
+        // Funzione asincrona per il logout
+        const handleLogout = async () => {
+            try {
+                const response = await fetch('http://localhost:5150/api/auth/logout', {
+                    method: 'POST',
+                    credentials: 'include',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                });
 
-            window.location.href = '/Auth/Logout';
-        });
+                if (response.ok) {
+                    window.location.href = '/';
+                } else {
+                    console.error('Errore durante il logout');
+                }
+            } catch (error) {
+                console.error('Errore di rete:', error);
+            }
+        };
+
+        // Conferma logout: manda una richiesta POST e reindirizza l'utente
+        confirmLogout.addEventListener('click', handleLogout);
+
 
     </script>
 

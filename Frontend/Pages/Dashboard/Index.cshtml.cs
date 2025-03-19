@@ -1,37 +1,75 @@
-using Frontend.Customizations.GlobalObjects;
-using Microsoft.AspNetCore.Http.HttpResults;
+using System.Net;
+using System.Net.Http.Headers;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-
 using Newtonsoft.Json;
 
 namespace Frontend.Pages;
 
 public class IndexModel : PageModel
 {
-    private readonly ILogger<IndexModel> _logger;
-    private readonly HttpClient _httpClient;
-    public IndexModel(ILogger<IndexModel> logger, HttpClient httpClient)
+    public Statistiche? Stats { get; set; } = new();
+    private readonly HttpClient _client;
+
+    public IndexModel(HttpClient client)
     {
-        _logger = logger;
-        _httpClient = httpClient;
+        _client = client;
     }
 
-    public Stats? Stats {get; set;} = new Stats();
-    public async Task<IActionResult> OnGet()
+    public async Task<IActionResult> OnGetAsync()
     {
-        var response = await _httpClient.GetAsync("http://localhost:5150/api/dashboard");
-
-        if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-            return RedirectToPage("/AccessoNegato");
-
-
-        if(response.IsSuccessStatusCode)
+        try
         {
-            var json = await response.Content.ReadAsStringAsync();
-            Stats = JsonConvert.DeserializeObject<Stats>(json);
-        }
+            var token = Request.Cookies["jwtToken"];
+            // if (string.IsNullOrEmpty(token))
+            // {
+            //     Console.WriteLine("Token JWT non trovato nel cookie.");
+            //     return RedirectToPage("/Auth/Login");
+            // }
 
-        return Page();
+            Console.WriteLine($"Token JWT trovato: {token}");
+            _client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+            foreach (var header in _client.DefaultRequestHeaders)
+            {
+                Console.WriteLine($"{header.Key}: {string.Join(", ", header.Value)}");
+            }
+
+            var dashboardResponse = await _client.GetAsync("http://localhost:5150/api/dashboard");
+
+            if (dashboardResponse.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                Console.WriteLine("Token JWT non autorizzato.");
+                return RedirectToPage("/AccessoNegato");
+            }
+
+            if (!dashboardResponse.IsSuccessStatusCode)
+            {
+                Console.WriteLine($"Errore API: {dashboardResponse.StatusCode}");
+                return RedirectToPage("/Error");
+            }
+
+            var content = await dashboardResponse.Content.ReadAsStringAsync();
+            Stats = JsonConvert.DeserializeObject<Statistiche>(content);
+
+            return Page();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Errore: {ex.Message}");
+            return RedirectToPage("/Error");
+        }
+    }
+
+    public class Statistiche
+    {
+        [JsonProperty("allClienti")]
+        public int AllClienti { get; set; }
+
+        [JsonProperty("allOrdini")]
+        public int AllOrdini { get; set; }
+
+        [JsonProperty("weeklyClienti")]
+        public int WeeklyClienti { get; set; }
     }
 }

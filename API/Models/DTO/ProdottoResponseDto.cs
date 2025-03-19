@@ -22,21 +22,18 @@
 
         public class Builder
         {
-            // Proprietà interne con setter privati
             public string NomeProdotto { get; private set; }
             public string Categoria { get; private set; } 
             public decimal Prezzo { get; private set; }
             public int Giacenza { get; private set; }
             public string ImgPath { get; private set; } 
 
-            // Metodi per impostare le proprietà
             public Builder SetNomeProdotto(string nomeProdotto) { NomeProdotto = nomeProdotto; return this; }
             public Builder SetCategoria(string categoria) { Categoria = categoria; return this; }
             public Builder SetPrezzo(decimal prezzo) { Prezzo = prezzo; return this; }
             public Builder SetGiacenza(int giacenza) { Giacenza = giacenza; return this; }
             public Builder SetImgPath(string imgPath) { ImgPath = imgPath; return this; }
 
-            // Metodo per costruire l'oggetto ProdottoResponseDto
             public ProdottoResponseDto Build() => new ProdottoResponseDto(this);
         }
     }

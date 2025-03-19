@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>rtm62dlidk</Fingerprint>
-      <Integrity>Dx+c0XZmyiE6xl9mwtGiiVgL60ykne/PjOfZ5NQALFI=</Integrity>
+      <Fingerprint>w3to57aplv</Fingerprint>
+      <Integrity>XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\fetchWithCookies.js'))</OriginalItemSpec>

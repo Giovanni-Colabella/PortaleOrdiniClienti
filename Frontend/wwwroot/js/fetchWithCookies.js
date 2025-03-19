@@ -9,5 +9,5 @@ export async function fetchWithCookies(url, options = {}) {
 
     const completeOptions = { ...baseOptions, ...options};
 
-    return fetch(url, completeOptions);
+    return await fetch(url, completeOptions);
 }

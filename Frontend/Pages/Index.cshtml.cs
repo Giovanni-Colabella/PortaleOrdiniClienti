@@ -49,7 +49,7 @@ namespace Frontend.Pages.Prodotti
             if (string.IsNullOrWhiteSpace(text))
                 return string.Empty;
 
-            // Se la lunghezza desiderata è troppo piccola per i "...", restituisci il testo originale
+            // Se la lunghezza desiderata ï¿½ troppo piccola per i "...", restituisci il testo originale
             if (maxLength <= 3)
                 return text.Length > maxLength ? text.Substring(0, maxLength) : text;
 

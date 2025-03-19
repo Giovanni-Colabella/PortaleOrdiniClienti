@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
-{   
+{
     [Route("api/[controller]")]
     [ApiController]
     public class DashboardController : ControllerBase
@@ -18,7 +18,6 @@ namespace API.Controllers
             _ordineService = ordineService;
         }
 
-        // [Authorize(Roles = "Admin")]
         [Authorize]
         [HttpGet]
         public async Task<IActionResult> Index()

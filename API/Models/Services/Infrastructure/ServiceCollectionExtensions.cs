@@ -1,9 +1,10 @@
 using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
 using System.Text;
+
 using API.Models.Entities;
 using API.Models.Services.Application;
 using API.Services;
+
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -82,41 +83,44 @@ public static class ServiceCollectionExtensions
                 ValidIssuer = jwtSettings["Issuer"],
                 ValidAudience = jwtSettings["Audience"],
                 IssuerSigningKey = key,
-                RoleClaimType = ClaimTypes.Role,
-                ClockSkew = TimeSpan.Zero
             };
 
-            options.Events = new JwtBearerEvents
-            {
-                // Legge il token dal cookie
-                OnMessageReceived = context =>
-                {
-                    context.Token = context.Request.Cookies["jwtToken"];
-                    return Task.CompletedTask;
-                },
+            // options.Events = new JwtBearerEvents
+            // {
+            //     // Legge il token dal cookie
+            //     OnMessageReceived = context =>
+            //     {
+            //         context.Token = context.Request.Cookies["jwtToken"];
+            //         return Task.CompletedTask;
+            //     },
 
-                // questo evento controlla se il token è presente nella blacklist o meno
+            //     // questo evento controlla se il token è presente nella blacklist o meno
 
-                OnTokenValidated = context =>
-                {
-                    if (context.SecurityToken is not JwtSecurityToken jwtToken)
-                    {
-                        context.Fail("Token non valido");
-                        return Task.CompletedTask;
-                    }
+            //     OnTokenValidated = context =>
+            //     {
+            //         if (context.SecurityToken is not JwtSecurityToken jwtToken)
+            //         {
+            //             context.Fail("Token non valido");
+            //             return Task.CompletedTask;
+            //         }
 
-                    var tokenString = jwtToken.RawData;
-                    var blacklist = context.HttpContext
-                                            .RequestServices
-                                            .GetRequiredService<ITokenBlacklist>();
+            //         var tokenString = jwtToken.RawData;
+            //         var blacklist = context.HttpContext
+            //                                 .RequestServices
+            //                                 .GetRequiredService<ITokenBlacklist>();
 
-                    if (blacklist.IsRevoked(tokenString))
-                        context.Fail("Token revocato");
+            //         if (blacklist.IsRevoked(tokenString))
+            //             context.Fail("Token revocato");
 
-                    return Task.CompletedTask;
-                }
+            //         return Task.CompletedTask;
+            //     },
+            //     OnAuthenticationFailed = context =>
+            //     {
+            //         Console.WriteLine($"Errore di autenticazione: {context.Exception.Message}");
+            //         return Task.CompletedTask;
+            //     }
 
-            };
+            // };
         });
 
         return services;
@@ -129,6 +133,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IImagePersister, ImageService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddSingleton<ITokenBlacklist, TokenBlacklist>();
+        services.AddScoped<IUtenteBloccatoService, BanUserByEmailService>();
 
         return services;
     }

@@ -1,16 +1,14 @@
 ﻿@page
 @model IndexModel
-@{
-    ViewData["Title"] = "Home page";
-}
+
 
 <!-- Titolo -->
 <div class="text-center mb-12">
     <h1 class="font-extrabold text-4xl sm:text-5xl text-indigo-700 mb-4 animate-bounce">
-        <i class="fas fa-handshake text-indigo-500 mr-3"></i> 
+        <i class="fas fa-handshake text-indigo-500 mr-3"></i>
         <span class="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
             GestioneFacile
-        </span> 
+        </span>
         ti dà il benvenuto <span class="text-purple-500">;)</span>
     </h1>
 </div>
@@ -20,13 +18,18 @@
     <div class="bg-white rounded-xl shadow-lg overflow-hidden">
         <div class="px-8 py-12 text-center">
             <p class="text-2xl font-semibold text-gray-800 mb-6">
-                Benvenuto in <strong class="text-indigo-600">GestioneFacile</strong>, il cuore pulsante della tua attività! 🌟
+                Benvenuto in <strong class="text-indigo-600">GestioneFacile</strong>, il cuore pulsante della tua
+                attività! 🌟
             </p>
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                Sei pronto a semplificare la gestione dei tuoi clienti, ordini e prodotti? Con la nostra dashboard intuitiva, tutto diventa più semplice e veloce! Qui potrai tenere sotto controllo ogni aspetto del tuo business con pochi clic.
+                Sei pronto a semplificare la gestione dei tuoi clienti, ordini e prodotti? Con la nostra dashboard
+                intuitiva, tutto diventa più semplice e veloce! Qui potrai tenere sotto controllo ogni aspetto del tuo
+                business con pochi clic.
             </p>
             <p class="text-lg text-gray-600 mb-6 leading-relaxed">
-                Con <strong class="text-indigo-600">GestioneFacile</strong>, risparmi tempo e gestisci tutto con una sola interfaccia elegante e funzionale. Inizia subito scegliendo una delle opzioni qui sotto e metti in moto la tua attività!
+                Con <strong class="text-indigo-600">GestioneFacile</strong>, risparmi tempo e gestisci tutto con una
+                sola interfaccia elegante e funzionale. Inizia subito scegliendo una delle opzioni qui sotto e metti in
+                moto la tua attività!
             </p>
         </div>
     </div>
@@ -198,4 +201,38 @@
 </div>
 
 
+<!-- Script per autenticazione e autorizzazione -->
+@* <script type="module">
+    import { fetchWithCookies } from '/js/fetchWithCookies.js';
 
+    document.addEventListener('DOMContentLoaded', async () => {
+        console.log("funzione chiamata correttamente")
+        try {
+            const response = await fetch('http://localhost:5150/api/dashboard', {
+                method: 'GET',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                credentials: 'include' // Includi i cookie
+            });
+
+            if (response.status === 401) {
+                window.location.href = '/AccessoNegato';
+                return;
+            }
+
+            if (response.ok) {
+                const data = await response.json();
+                console.log('Dati ricevuti:', data);
+                window.location.href data=data '/Dashboard';
+            } else {
+                throw new Error('Errore nel caricamento dei dati');
+            }
+        } catch (error) {
+            console.error('Errore:', error);
+            alert(error.message);
+        }
+    });
+
+</script> *@
