@@ -1,6 +1,8 @@
 using API.Models.DTO.Mappings;
+using API.Models.Entities;
 using API.Services;
 
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Models.Services.Application
@@ -8,9 +10,12 @@ namespace API.Models.Services.Application
     public class EfCoreClienteService : IClienteService
     {
         private readonly ApplicationDbContext _context;
-        public EfCoreClienteService(ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+        public EfCoreClienteService(ApplicationDbContext context,
+            UserManager<ApplicationUser> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         public async Task<bool> CreateClienteAsync(ClienteDto clienteDto)
@@ -124,5 +129,12 @@ namespace API.Models.Services.Application
             return await _context.Clienti.Where(c => c.DataIscrizione >= DateTime.Now.AddDays(-7)).CountAsync();
         }
 
+        public async Task<List<ClienteDto>> GetClientiByEmailAsync(string search)
+        {
+            var clientiTrovati =  await _context.Clienti.Where( cliente => cliente.Email.Contains(search)).Take(3).ToListAsync();
+
+            List<ClienteDto> clientiDto = clientiTrovati.Select( cliente => cliente.ToDto()).ToList();
+            return clientiDto;
+        }   
     }
 }

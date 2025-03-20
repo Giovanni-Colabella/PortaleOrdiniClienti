@@ -1,6 +1,6 @@
 using API.Models.Requests.Validators;
 using API.Models.Services.Infrastructure;
-
+using API.Models.Services.Infrastructure.Middlewares;
 using FluentValidation;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -49,6 +49,9 @@ if (app.Environment.IsDevelopment())
         options.RoutePrefix = string.Empty;
     });
 }
+
+// Questo middleware ( si trova in models >> services >> infrastructure >> middlewares) controlla se l'ip del client è bannato
+app.UseMiddleware<BannedIpMiddleware>();
 
 app.UseStaticFiles();
 

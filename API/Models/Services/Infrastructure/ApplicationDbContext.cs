@@ -66,8 +66,8 @@ namespace API.Services
         public DbSet<Ordine> Ordini { get; set; } // Tabella Ordini
         public DbSet<Prodotto> Prodotti { get; set; } // Tabella Prodotti
         public DbSet<DettaglioOrdine> DettagliOrdini { get; set; } // Tabella intermedia DettagliOrdini 
-        public DbSet<UtenteBloccato> UtentiBloccati { get; set; } // Tabella utenti bannati
-        
+        public DbSet<BannedIp> BannedIps { get; set; } // Tabella BannedIps      
+          
         #endregion
     }
 }

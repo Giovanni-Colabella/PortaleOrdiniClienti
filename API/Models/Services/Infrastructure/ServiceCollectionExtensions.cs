@@ -3,6 +3,7 @@ using System.Text;
 
 using API.Models.Entities;
 using API.Models.Services.Application;
+using API.Models.Services.Infrastructure.Middlewares;
 using API.Services;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -133,9 +134,10 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IImagePersister, ImageService>();
         services.AddScoped<IAuthService, AuthService>();
         services.AddSingleton<ITokenBlacklist, TokenBlacklist>();
-        services.AddScoped<IUtenteBloccatoService, BanUserByEmailService>();
+        services.AddScoped<IUtenteBloccatoService, BanUserByIpService>();
 
         return services;
     }
+
 
 }

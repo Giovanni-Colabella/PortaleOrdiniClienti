@@ -2,12 +2,14 @@ using API.Models.DTO;
 using API.Models.Services.Application;
 using API.Services;
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController] 
+[Authorize]
 public class OrdiniController : ControllerBase
 {
 

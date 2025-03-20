@@ -1,3 +1,5 @@
+using System.Net;
+using System.Net.Http.Headers;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -21,8 +23,11 @@ namespace MyProject.Pages.Clienti
 
         public async Task OnGetAsync(string? search, int pageNumber = 1)
         {
+
             CurrentPage = pageNumber;
             Search = search;
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
             // url di base 
             string url = "http://localhost:5150/api/clienti";
@@ -34,6 +39,13 @@ namespace MyProject.Pages.Clienti
             }
 
             var response = await _httpClient.GetAsync(url);
+
+            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                Response.Redirect("/AccessoNegato");
+                return;
+            }
+            
             if (response.IsSuccessStatusCode)
             {
                 

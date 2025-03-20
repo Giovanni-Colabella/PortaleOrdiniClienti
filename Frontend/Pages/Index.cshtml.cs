@@ -72,11 +72,6 @@ namespace Frontend.Pages.Prodotti
 
             var response = await _httpClient.GetAsync($"{url}?page={CurrentPage}&pageSize={PageSize}");
 
-            if (response.StatusCode == System.Net.HttpStatusCode.Unauthorized)
-            {
-                return RedirectToPage("/AccessoNegato");
-            }
-
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();

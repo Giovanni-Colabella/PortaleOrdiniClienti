@@ -4,13 +4,14 @@ using API.Models.ValueObjects;
 using API.Services;
 
 using FluentValidation;
-
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ClientiController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
@@ -110,8 +111,8 @@ namespace API.Controllers
                 Cognome = cg.Cognome,
                 Email = cg.Email,
                 NumeroTelefono = cg.NumeroTelefono,
-                Indirizzo = cg.Indirizzo,  
-                Status = cg.Status, 
+                Indirizzo = cg.Indirizzo,
+                Status = cg.Status,
                 DataIscrizione = cg.DataIscrizione
             }).ToList();
 
@@ -122,6 +123,13 @@ namespace API.Controllers
 
             // Ritorna i clienti appena generati
             return Ok(clienti);
+        }
+
+
+        [HttpGet("email")]
+        public async Task<IActionResult> GetClientiByEmailAsync([FromQuery] string search)
+        {
+            return Ok(await _clienteService.GetClientiByEmailAsync(search));
         }
 
 

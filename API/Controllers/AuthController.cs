@@ -7,7 +7,7 @@ using API.Models.Entities;
 using API.Models.Services.Application;
 
 using FluentValidation;
-
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
@@ -20,19 +20,22 @@ public class AuthController : ControllerBase
     private readonly IValidator<LoginRequestDto> _loginValidator;
     private readonly IConfiguration _configuration;
     private readonly ITokenBlacklist _tokenBlacklist;
+    private readonly UserManager<ApplicationUser> _userManager;
 
     public AuthController(
         IAuthService authService,
         IValidator<RegisterRequest> registerValidator,
         IConfiguration configuration,
         IValidator<LoginRequestDto> loginValidator,
-        ITokenBlacklist tokenBlacklist)
+        ITokenBlacklist tokenBlacklist, 
+        UserManager<ApplicationUser> userManager)
     {
         _authService = authService;
         _registerValidator = registerValidator;
         _loginValidator = loginValidator;
         _configuration = configuration;
         _tokenBlacklist = tokenBlacklist;
+        _userManager = userManager;
     }
 
     [HttpPost("register")]
@@ -60,6 +63,9 @@ public class AuthController : ControllerBase
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
     {
+        var ip = GetClientIp();
+        
+
         var validationResult = await _loginValidator.ValidateAsync(request);
 
         if (!validationResult.IsValid)
@@ -75,6 +81,9 @@ public class AuthController : ControllerBase
             return Unauthorized("credenziali non valide.");
         }
 
+        user.Ip = ip;
+        await _userManager.UpdateAsync(user);
+
         var token = GenerateJwtToken(user);
 
         Response.Cookies.Append("jwtToken", token, new CookieOptions
@@ -86,6 +95,21 @@ public class AuthController : ControllerBase
         });
 
         return Ok();
+    }
+    private string GetClientIp()
+    {
+        var ip = HttpContext.Request.Headers["X-Forwarded-For"].FirstOrDefault();
+
+        if (!string.IsNullOrEmpty(ip))
+        {
+            ip = ip.Split(',')[0].Trim();
+        }
+        else
+        {
+            ip = HttpContext.Connection.RemoteIpAddress?.ToString();
+        }
+
+        return ip;
     }
 
 
@@ -126,7 +150,7 @@ public class AuthController : ControllerBase
 
         var claims = new List<Claim>
         {
-            new Claim(ClaimTypes.NameIdentifier, user.Id), 
+            new Claim(ClaimTypes.NameIdentifier, user.Id),
             new Claim(ClaimTypes.Email, user.Email),
             new Claim(ClaimTypes.Name, user.UserName)
         };

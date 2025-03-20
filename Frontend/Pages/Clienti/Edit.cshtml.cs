@@ -1,3 +1,5 @@
+using System.Net;
+using System.Net.Http.Headers;
 using Frontend.Customizations.GlobalObjects;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -21,8 +23,15 @@ namespace Frontend.Pages.Clienti
         public async Task<IActionResult> OnGetAsync(int id)
         {
             
-
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.GetAsync($"http://localhost:5150/api/clienti/{id}");
+
+            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
+
             if (!response.IsSuccessStatusCode)
             {
                 return NotFound();
@@ -45,7 +54,15 @@ namespace Frontend.Pages.Clienti
             if (string.IsNullOrEmpty(Cliente.Indirizzo.Citta)) Cliente.Indirizzo.Citta = "";
             if (string.IsNullOrEmpty(Cliente.Indirizzo.CAP)) Cliente.Indirizzo.CAP = "";
 
+
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.PutAsJsonAsync($"http://localhost:5150/api/clienti/{Cliente.Id}", Cliente);
+
+            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if (response.IsSuccessStatusCode)
                 return RedirectToPage("Index");

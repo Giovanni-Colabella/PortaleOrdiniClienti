@@ -11,5 +11,6 @@ namespace API.Models.Services.Application
         Task<List<ClienteDto>> SearchAsync (string keyword);
         Task<int> CountAllClientiAsync();
         Task<int> CountWeeklyClientiAsync();
+        Task<List<ClienteDto>> GetClientiByEmailAsync( string search );
     }
 }

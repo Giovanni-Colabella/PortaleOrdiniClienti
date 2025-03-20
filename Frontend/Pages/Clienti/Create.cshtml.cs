@@ -1,3 +1,5 @@
+using System.Net;
+using System.Net.Http.Headers;
 using Frontend.Customizations.GlobalObjects;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -17,6 +19,21 @@ namespace Frontend.Pages.Clienti
         {
             _httpClient = httpClient;
         }
+        
+        public async Task<IActionResult> OnGetAsyc()
+        {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await _httpClient.GetAsync("http://localhost:5150/api/clienti");
+
+
+            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
+
+            return Page(); // Ensure a default return value
+        }
 
         public async Task<IActionResult> OnPostAsync()
         {
@@ -29,6 +46,11 @@ namespace Frontend.Pages.Clienti
             if (string.IsNullOrEmpty(Cliente.Indirizzo.CAP)) Cliente.Indirizzo.CAP = "";
 
             var response = await _httpClient.PostAsJsonAsync("http://localhost:5150/api/clienti", Cliente);
+
+            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if (response.IsSuccessStatusCode)
                 return RedirectToPage("Index");

@@ -6,12 +6,12 @@ public class BanUserDtoValidator : AbstractValidator<BanUserDto>
 {
     public BanUserDtoValidator()
     {
-        RuleFor( input => input.Email )
-            .NotEmpty().WithMessage("Il campo 'Nome' non può essere vuoto")
-            .EmailAddress().WithMessage("Il campo 'Email' deve essere un indirizzo valido");
-        
-        RuleFor( input => input.Motivazione )
-            .NotEmpty().WithMessage("Il campo 'Motivazione' non può essere vuoto");
-            
+        RuleFor(input => input.Email)
+            .NotEmpty().WithMessage("Email è obbligatorio")
+            .EmailAddress().WithMessage("Email non è valida");
+
+        RuleFor(input => input.Motivazione)
+            .NotEmpty().WithMessage("Motivazione è obbligatoria")
+            .MinimumLength(10).WithMessage("Motivazione deve essere lunga almeno 10 caratteri");
     }
 }
