@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "f18NZOy3D3POEgUTnPq/S9GR9+icS39wLfgt2pG0BFo=",
+  "Hash": "B0LCOGtw6KzkuIh1thjcDGiR+3GldUtGk8S82ACGuRk=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -353,12 +353,12 @@
       "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-x98k7gue4i.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
-      "RelativePath": "css/styles#[.{fingerprint=9ai4bnp6yx}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=x98k7gue4i}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -367,8 +367,8 @@
       "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "5uqab8tatl",
-      "Integrity": "XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=",
+      "Fingerprint": "xhxs7aogh3",
+      "Integrity": "axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css"
@@ -493,8 +493,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "9ai4bnp6yx",
-      "Integrity": "kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=",
+      "Fingerprint": "x98k7gue4i",
+      "Integrity": "5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
@@ -1199,13 +1199,13 @@
       ]
     },
     {
-      "Route": "css/styles.9ai4bnp6yx.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-x98k7gue4i.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000190005700"
+          "Quality": "0.000179147259"
         }
       ],
       "ResponseHeaders": [
@@ -1215,19 +1215,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5262"
+          "Value": "5581"
         },
         {
           "Name": "ETag",
-          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
+          "Value": "\"axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
         },
         {
           "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
+          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -1243,26 +1243,18 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
+          "Value": "W/\"5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY=\""
         }
       ],
       "EndpointProperties": [
         {
-          "Name": "fingerprint",
-          "Value": "9ai4bnp6yx"
-        },
-        {
-          "Name": "label",
-          "Value": "css/styles.css"
-        },
-        {
           "Name": "integrity",
-          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
+          "Value": "sha256-5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY="
         }
       ]
     },
     {
-      "Route": "css/styles.9ai4bnp6yx.css",
+      "Route": "css/styles.css",
       "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -1272,7 +1264,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "26894"
+          "Value": "29293"
         },
         {
           "Name": "Content-Type",
@@ -1280,11 +1272,156 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
+          "Value": "\"5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-x98k7gue4i.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5581"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.x98k7gue4i.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-x98k7gue4i.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000179147259"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5581"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x98k7gue4i"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.x98k7gue4i.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "29293"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1294,7 +1431,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9ai4bnp6yx"
+          "Value": "x98k7gue4i"
         },
         {
           "Name": "label",
@@ -1302,13 +1439,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
+          "Value": "sha256-5W1TIZ6YTM5weiA9o3YhoGLzK14WA3ORzmwKMHGa/UY="
         }
       ]
     },
     {
-      "Route": "css/styles.9ai4bnp6yx.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
+      "Route": "css/styles.x98k7gue4i.css.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-x98k7gue4i.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1317,7 +1454,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5262"
+          "Value": "5581"
         },
         {
           "Name": "Content-Type",
@@ -1325,11 +1462,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
+          "Value": "\"axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+          "Value": "Fri, 21 Mar 2025 14:40:00 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1347,7 +1484,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "9ai4bnp6yx"
+          "Value": "x98k7gue4i"
         },
         {
           "Name": "label",
@@ -1355,144 +1492,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000190005700"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5262"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "26894"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5262"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ="
+          "Value": "sha256-axhj4Mth/5yo9iwrlso6izC2pD9QMS7A9SVJ3CjFMgQ="
         }
       ]
     },

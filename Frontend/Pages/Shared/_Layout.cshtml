@@ -16,17 +16,13 @@
         h1, h2, h3 {
             font-family: 'Poppins', sans-serif;
         }
-        .gradient-text {
-            background: linear-gradient(45deg, #6366f1, #8b5cf6);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
+        
         .nav-link::after {
             content: '';
             display: block;
             width: 0;
             height: 2px;
-            background: linear-gradient(90deg, #6366f1, #8b5cf6);
+            background: linear-gradient(90deg, #0f0f29, #04000c);
             transition: width 0.3s;
         }
         .nav-link:hover::after {
@@ -34,17 +30,16 @@
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 via-indigo-50 to-purple-50 text-gray-800 flex flex-col min-h-screen">
+<body class="bg-gradient-to-br from-blue-50 via-blue-100 to-blue-200 text-gray-800 flex flex-col min-h-screen">
 
-    <nav class="bg-white/80 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-20 border-b border-gray-100">
+    <nav class="bg-blue-900 backdrop-blur-md shadow-sm fixed top-0 left-0 w-full z-20 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex justify-between items-center">
-                <a href="/" class="text-2xl font-bold gradient-text">GestioneFacile</a>
+                <a href="/" class="text-2xl font-bold gradient-text text-white">GestioneFacile</a>
                 <div class="hidden sm:flex space-x-8 items-center">
-                    <a asp-page="/Dashboard/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Dashboard</a>
-                    <a asp-page="/Clienti/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Clienti</a>
-                    <a asp-page="/Ordini/Index" class="nav-link text-gray-600 hover:text-gray-900 font-medium transition-colors duration-300">Ordini</a>
-                    <a asp-page="/Account/Login" class="px-6 py-2 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-full hover:shadow-lg transition-all duration-300 hover:scale-105">Accedi</a>
+                    <a asp-page="/Dashboard/Index" class="nav-link text-white font-medium transition-colors duration-300">Dashboard</a>
+                    <a asp-page="/Clienti/Index" class="nav-link text-white font-medium transition-colors duration-300">Clienti</a>
+                    <a asp-page="/Ordini/Index" class="nav-link text-white font-medium transition-colors duration-300">Ordini</a>
                 </div>
                 <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-100">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +51,6 @@
                 <a asp-page="/Dashboard/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Dashboard</a>
                 <a asp-page="/Clienti/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Clienti</a>
                 <a asp-page="/Ordini/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Ordini</a>
-                <a asp-page="/Account/Login" class="block mt-2 px-4 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 text-white text-center rounded-full hover:shadow-lg transition-all duration-300">Accedi</a>
             </div>
         </div>
     </nav>
@@ -65,23 +59,23 @@
         @RenderBody()
     </main>
 
-    <footer class="border-t border-gray-200 bg-white/80 backdrop-blur-md mt-20">
+    <footer class="border-t  bg-blue-900 backdrop-blur-md mt-20">
         <div class="container mx-auto px-6 py-8">
             <div class="flex flex-col items-center">
                 <div class="flex space-x-6 mb-6">
-                    <a href="https://www.facebook.com" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                    <a href="https://www.facebook.com" class="p-2 rounded-full bg-amber-400 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
                         <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="https://www.twitter.com" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                    <a href="https://www.twitter.com" class="p-2 rounded-full bg-amber-400 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="https://github.com/Giovanni-Colabella" class="p-2 rounded-full bg-gray-100 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
+                    <a href="https://github.com/Giovanni-Colabella" class="p-2 rounded-full bg-amber-400 hover:bg-gradient-to-r from-indigo-500 to-purple-600 hover:text-white transition-all duration-300">
                         <i class="fab fa-github"></i>
                     </a>
                 </div>
-                <p class="text-gray-500 text-sm text-center mb-2">
+                <p class="text-white text-sm text-center mb-2">
                     &copy; 2025 GestioneFacile - Tutti i diritti riservati.<br>
-                    <span class="text-gray-400">Sviluppato da &copy;Giovanni Colabella</span>
+                    <span class="text-white">Sviluppato da &copy;Giovanni Colabella</span>
                 </p>
             </div>
         </div>
