@@ -1,3 +1,4 @@
+using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 using API.Models.Entities;
@@ -97,42 +98,6 @@ public static class ServiceCollectionExtensions
                 IssuerSigningKey = key,
             };
 
-            // options.Events = new JwtBearerEvents
-            // {
-            //     // Legge il token dal cookie
-            //     OnMessageReceived = context =>
-            //     {
-            //         context.Token = context.Request.Cookies["jwtToken"];
-            //         return Task.CompletedTask;
-            //     },
-
-            //     // questo evento controlla se il token è presente nella blacklist o meno
-
-            //     OnTokenValidated = context =>
-            //     {
-            //         if (context.SecurityToken is not JwtSecurityToken jwtToken)
-            //         {
-            //             context.Fail("Token non valido");
-            //             return Task.CompletedTask;
-            //         }
-
-            //         var tokenString = jwtToken.RawData;
-            //         var blacklist = context.HttpContext
-            //                                 .RequestServices
-            //                                 .GetRequiredService<ITokenBlacklist>();
-
-            //         if (blacklist.IsRevoked(tokenString))
-            //             context.Fail("Token revocato");
-
-            //         return Task.CompletedTask;
-            //     },
-            //     OnAuthenticationFailed = context =>
-            //     {
-            //         Console.WriteLine($"Errore di autenticazione: {context.Exception.Message}");
-            //         return Task.CompletedTask;
-            //     }
-
-            // };
         });
 
         return services;

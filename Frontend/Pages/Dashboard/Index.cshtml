@@ -119,23 +119,23 @@
                 <h3 class="text-xl font-semibold mb-4">Rendi un utente Amministratore</h3>
                 <p class="text-md">Promuovi un cliente a ruolo di amministratore.</p>
             </div>
-            <a asp-page="/Admin/PromoteUser" class="text-center text-white bg-gray-600 hover:bg-gray-700 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Rendi Admin</a>
+            <a asp-page="/GiveRolesToUser/Index" class="text-center text-white bg-gray-600 hover:bg-gray-700 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Rendi Admin</a>
         </div>
 
         <!-- Card per bannare un utente -->
         <div class="bg-gray-300 text-gray-800 shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
             <div class="mb-4">
                 <i class="fas fa-user-slash fa-3x mb-4 text-red-500"></i>
-                <h3 class="text-xl font-semibold mb-4">Banna un Utente</h3>
-                <p class="text-md">Se desideri impedire a un utente di accedere al sito, puoi bannarlo direttamente da questa sezione.</p>
+                <h3 class="text-xl font-semibold mb-4">Blocca un Utente</h3>
+                <p class="text-md">Se desideri impedire a un utente di accedere al sito, puoi bloccarlo direttamente da questa sezione.</p>
             </div>
-            <a asp-page="/Admin/BanUser" class="text-center text-white bg-gray-600 hover:bg-gray-700 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Banna un Utente</a>
+            <a asp-page="/BanUser/Index" class="text-center text-white bg-gray-600 hover:bg-gray-700 px-5 py-2 rounded-lg shadow-md transform hover:scale-105 transition">Blocca un Utente</a>
         </div>
 
         <!-- Card per mettere il sito in manutenzione -->
         <div class="bg-gray-300 text-gray-800 shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
             <div class="mb-4">
-                <i class="fas fa-tools fa-3x mb-4"></i>
+                <i class="fas fa-tools fa-3x mb-4 text-amber-400"></i>
                 <h3 class="text-xl font-semibold mb-4">Metti il Sito in Manutenzione</h3>
                 <p class="text-md">Se hai bisogno di eseguire lavori di manutenzione, attiva questa opzione per informare gli utenti.</p>
             </div>
@@ -145,7 +145,7 @@
         <!-- Card per cambiare le informazioni di contatto -->
         <div class="bg-gray-300 text-gray-800 shadow-lg hover:shadow-xl transform hover:scale-105 transition duration-500 p-6 rounded-lg flex flex-col justify-between">
             <div class="mb-4">
-                <i class="fas fa-phone fa-3x mb-4"></i>
+                <i class="fas fa-phone fa-3x mb-4 text-amber-700"></i>
                 <h3 class="text-xl font-semibold mb-4">Modifica le tue informazioni di contatto</h3>
                 <p class="text-md">Aggiorna il tuo numero di telefono, email e altre informazioni di contatto per rimanere connesso.</p>
             </div>
