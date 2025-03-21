@@ -1,9 +1,10 @@
+using System.Net;
 using System.Text;
+
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+
 using Newtonsoft.Json;
-using System.Net;
-using System.Linq;
 
 namespace Frontend.Pages.Auth
 {

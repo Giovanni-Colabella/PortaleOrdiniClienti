@@ -1,9 +1,7 @@
-using System.IdentityModel.Tokens.Jwt;
 using System.Text;
 
 using API.Models.Entities;
 using API.Models.Services.Application;
-using API.Models.Services.Infrastructure.Middlewares;
 using API.Services;
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -20,10 +18,11 @@ public static class ServiceCollectionExtensions
     {
         services.AddSwaggerGen(options =>
         {
+            // Definizione della documentazione
             options.SwaggerDoc("v1", new OpenApiInfo
             {
                 Title = "API",
-                Version = "v1",
+                Version = "v2",
                 Description = "API per la gestione di clienti e ordini.",
                 Contact = new OpenApiContact
                 {
@@ -32,9 +31,21 @@ public static class ServiceCollectionExtensions
                 }
             });
 
+            // Aggiungi definizione di sicurezza per JWT se necessario
+            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            {
+                In = ParameterLocation.Header,
+                Description = "Inserisci il token JWT",
+                Name = "Authorization",
+                Type = SecuritySchemeType.ApiKey
+            });
+
         });
+
         return services;
     }
+
+
     public static IServiceCollection AddCorsWithDefaultValues(this IServiceCollection services)
     {
         services.AddCors(options =>
@@ -135,6 +146,7 @@ public static class ServiceCollectionExtensions
         services.AddScoped<IAuthService, AuthService>();
         services.AddSingleton<ITokenBlacklist, TokenBlacklist>();
         services.AddScoped<IUtenteBloccatoService, BanUserByIpService>();
+        services.AddScoped<IRolesService, EfCoreRolesService>();
 
         return services;
     }

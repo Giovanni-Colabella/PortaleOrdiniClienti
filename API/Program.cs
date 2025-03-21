@@ -43,10 +43,12 @@ var app = builder.Build();
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI(options =>
+
+    // Configura la UI di Swagger
+    app.UseSwaggerUI(c =>
     {
-        options.SwaggerEndpoint("/swagger/v1/swagger.json", "GestioneFacile API v1");
-        options.RoutePrefix = string.Empty;
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API v2");
+        c.RoutePrefix = string.Empty;  // Renderizza Swagger UI alla root del progetto
     });
 }
 

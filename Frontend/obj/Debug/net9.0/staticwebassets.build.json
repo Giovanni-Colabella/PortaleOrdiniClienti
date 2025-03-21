@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jYMQRczk4TzfVJ2hQC9hsEWp/+QDilvQcnASO0GEeaU=",
+  "Hash": "f18NZOy3D3POEgUTnPq/S9GR9+icS39wLfgt2pG0BFo=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Frontend\\wwwroot",
       "Source": "Frontend",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim#[.{fingerprint=2z0ns9nrw6}]?.js.gz",
       "AssetKind": "All",
@@ -28,20 +28,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "xlmiz42j7j",
       "Integrity": "9bWYPof03vxzc0YRmjwb6berDC7SXtE8rlvXxhIlakE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/site#[.{fingerprint=xtxxf3hu2r}]?.js.gz",
       "AssetKind": "All",
@@ -49,20 +49,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\site.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\site.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "rl5dcbfpcw",
       "Integrity": "Ydq7YvQUzhbo68waLZeQvZnPOvmTeQ+HyDqjkA1whsA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\site.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "css/site#[.{fingerprint=ci40vis3pn}]?.css.gz",
       "AssetKind": "All",
@@ -70,20 +70,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\site.css",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "eirx7cavsd",
       "Integrity": "hoAbG0g6gRQ02ojiphqh3x1Xnjp3ig0NTgSQ7PTwGMg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\site.css"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint=ag7o75518u}]?.js.gz",
       "AssetKind": "All",
@@ -91,20 +91,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "hgmochx07c",
       "Integrity": "T/jNUyeLYdKQ3zndN8zs507jIg6GnkENMxuBqc1eXs0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint=mrlpezrjn3}]?.js.gz",
       "AssetKind": "All",
@@ -112,20 +112,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "uya4g6am6w",
       "Integrity": "hhhjkgaWyJk2NWrF/LyhTIDOF42U+kBX72IU2K4RWJg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint=356vix0kms}]?.txt.gz",
       "AssetKind": "All",
@@ -133,20 +133,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "2yhmugv22u",
       "Integrity": "WpL0kbwDHONKwUu+fAC6nKQXtZOBY20Gsspcn336Iz4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min#[.{fingerprint=4v8eqarkd7}]?.js.gz",
       "AssetKind": "All",
@@ -154,20 +154,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "kw5m9o3hck",
       "Integrity": "ZECRGyeVrglmY0fxP9wVujqjjSoecu3G7roYlvaINus=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint=87fc7y1x7t}]?.map.gz",
       "AssetKind": "All",
@@ -175,20 +175,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "p5ev1mo4sb",
       "Integrity": "bZLUSM9fRhNJKF4yFjKvv9iU/j2aC1lJtEqR9u5n6y8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint=ttgo8qnofa}]?.map.gz",
       "AssetKind": "All",
@@ -196,20 +196,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "hq2hiirxit",
       "Integrity": "GfL7M76amKU+B+H1o4WVh7q13GpiC7L6scp3ODOz3ag=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive#[.{fingerprint=47otxtyo56}]?.js.gz",
       "AssetKind": "All",
@@ -217,20 +217,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "7mrxpazhmu",
       "Integrity": "8WSd7G1SSJrTChp1H0sIwU3oPQXDsKXVF1KkXEF6LuI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/autenticato#[.{fingerprint=k97hlx8g3l}]?.js.gz",
       "AssetKind": "All",
@@ -238,20 +238,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\autenticato.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "r6pxwf1g69",
       "Integrity": "w8mIM8T+gCceLWX2AQKOvdb/gklk7bAXdSyZUeTuK8Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\autenticato.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint=x0q3zqp4vz}]?.md.gz",
       "AssetKind": "All",
@@ -259,20 +259,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "1fp9w2itex",
       "Integrity": "7bAe2yT3obcUnzDyFQyuh4GI4iC/NGB4Bs4gZaY3Wj4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
       "AssetKind": "All",
@@ -280,20 +280,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\favicon.ico",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "nezsohjtde",
       "Integrity": "wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\favicon.ico"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint=0i3buxo5is}]?.js.gz",
       "AssetKind": "All",
@@ -301,20 +301,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "slhp14mdwv",
       "Integrity": "YPYGuVoBNkA8pP/JjlyjSON9Q7Ej1gVEUkbHrQT3uJU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint=83jwlth58m}]?.js.gz",
       "AssetKind": "All",
@@ -322,20 +322,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "8j9rvpuvlg",
       "Integrity": "BIw6qCD4ysNHqPUgCkXJ/h+XlQ/h+2MuYEbvs/ZN+kM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/fetchWithCookies#[.{fingerprint=w3to57aplv}]?.js.gz",
       "AssetKind": "All",
@@ -343,41 +343,41 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\fetchWithCookies.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "zg62zsmq4z",
       "Integrity": "vZ81u1JLJVL7/vltvOiWooEeMDYhjFilPgQxbRgisZY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\fetchWithCookies.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-y032l4erk0.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
-      "RelativePath": "css/styles#[.{fingerprint=y032l4erk0}]?.css.gz",
+      "RelativePath": "css/styles#[.{fingerprint=9ai4bnp6yx}]?.css.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\styles.css",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "x5qi86sybp",
-      "Integrity": "9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M=",
+      "Fingerprint": "5uqab8tatl",
+      "Integrity": "XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\styles.css"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint=muycvpuwrr}]?.js.gz",
       "AssetKind": "All",
@@ -385,20 +385,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "trtvcfsjjx",
       "Integrity": "h68a4ojlMeHZ2MJNcpHGvBgERdoUw7Qpxk6a/oPD5kQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint=o1o13a6vjx}]?.js.gz",
       "AssetKind": "All",
@@ -406,20 +406,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "4efnowp72v",
       "Integrity": "rJUWNDEom3xIYh3mH5HCPpyh/CGhP0YhaSsaX6IOiDk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint=lzl9nlhx6b}]?.js.gz",
       "AssetKind": "All",
@@ -427,20 +427,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "anlp8nykfw",
       "Integrity": "KuJPTvhuArDs4mj2zziNxM+hBWFbOhi0BKQgeR1pHG8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint=mlv21k5csn}]?.txt.gz",
       "AssetKind": "All",
@@ -448,20 +448,20 @@
       "AssetRole": "Alternative",
       "AssetMergeBehavior": "",
       "AssetMergeSource": "",
-      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "RelatedAsset": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
       "Fingerprint": "k2cjzt041l",
       "Integrity": "JKWeHUaANNuffeRatdc54UCb84RoxjEw/nTq8Mops8Y=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\LICENSE.txt"
+      "OriginalItemSpec": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\site.css",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "css/site#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "css/styles#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -493,17 +493,17 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "y032l4erk0",
-      "Integrity": "0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U=",
+      "Fingerprint": "9ai4bnp6yx",
+      "Integrity": "kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\favicon.ico",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\autenticato.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/autenticato#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\js\\autenticato.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\fetchWithCookies.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/fetchWithCookies#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\js\\fetchWithCookies.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\site.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "js/site#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery-validation/LICENSE#[.{fingerprint}]?.md",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/dist/jquery.slim.min#[.{fingerprint}]?.map",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "Frontend",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\",
       "BasePath": "_content/Frontend",
       "RelativePath": "lib/jquery/LICENSE#[.{fingerprint}]?.txt",
       "AssetKind": "All",
@@ -902,7 +902,7 @@
   "Endpoints": [
     {
       "Route": "css/site.ci40vis3pn.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -965,7 +965,7 @@
     },
     {
       "Route": "css/site.ci40vis3pn.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1010,7 +1010,7 @@
     },
     {
       "Route": "css/site.ci40vis3pn.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1063,7 +1063,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1118,7 +1118,7 @@
     },
     {
       "Route": "css/site.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\site.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\site.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1155,7 +1155,7 @@
     },
     {
       "Route": "css/site.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\31k4o5v5c6-ci40vis3pn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1199,13 +1199,13 @@
       ]
     },
     {
-      "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-y032l4erk0.gz",
+      "Route": "css/styles.9ai4bnp6yx.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000179436569"
+          "Quality": "0.000190005700"
         }
       ],
       "ResponseHeaders": [
@@ -1215,152 +1215,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5572"
+          "Value": "5262"
         },
         {
           "Name": "ETag",
-          "Value": "\"9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M=\""
+          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "29700"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-y032l4erk0.gz",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5572"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M="
-        }
-      ]
-    },
-    {
-      "Route": "css/styles.y032l4erk0.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-y032l4erk0.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000179436569"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5572"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1380,13 +1243,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U=\""
+          "Value": "W/\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y032l4erk0"
+          "Value": "9ai4bnp6yx"
         },
         {
           "Name": "label",
@@ -1394,13 +1257,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U="
+          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
         }
       ]
     },
     {
-      "Route": "css/styles.y032l4erk0.css",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\css\\styles.css",
+      "Route": "css/styles.9ai4bnp6yx.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1409,7 +1272,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "29700"
+          "Value": "26894"
         },
         {
           "Name": "Content-Type",
@@ -1417,11 +1280,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U=\""
+          "Value": "\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1431,7 +1294,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y032l4erk0"
+          "Value": "9ai4bnp6yx"
         },
         {
           "Name": "label",
@@ -1439,13 +1302,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0uC9TLfi9it6Ted2cJ+4pDBXyPjdoH5THU/gZyYWx5U="
+          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
         }
       ]
     },
     {
-      "Route": "css/styles.y032l4erk0.css.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-y032l4erk0.gz",
+      "Route": "css/styles.9ai4bnp6yx.css.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1454,7 +1317,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5572"
+          "Value": "5262"
         },
         {
           "Name": "Content-Type",
@@ -1462,11 +1325,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M=\""
+          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 19 Mar 2025 19:00:26 GMT"
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -1484,7 +1347,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "y032l4erk0"
+          "Value": "9ai4bnp6yx"
         },
         {
           "Name": "label",
@@ -1492,13 +1355,150 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-9XTj+rVQqf5rXKeGb/r1Tb/paZe4yesAEcLaA7M3M8M="
+          "Value": "sha256-XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000190005700"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5262"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\css\\styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "26894"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kexFfaPXJh5r4zVcIppwxQC7OVXgm2mfjSdGUPnWmik="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qufg9nuftv-9ai4bnp6yx.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5262"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 21 Mar 2025 13:47:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XQGLfHDh36kRzpw7BBwBhdA5nTVhX4vtV6NSvOIkSLQ="
         }
       ]
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1561,7 +1561,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1606,7 +1606,7 @@
     },
     {
       "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1659,7 +1659,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1714,7 +1714,7 @@
     },
     {
       "Route": "favicon.ico",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\favicon.ico",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1751,7 +1751,7 @@
     },
     {
       "Route": "favicon.ico.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\iz0j1ekpxm-61n19gt1b8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1796,7 +1796,7 @@
     },
     {
       "Route": "js/autenticato.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1851,7 +1851,7 @@
     },
     {
       "Route": "js/autenticato.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\autenticato.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1888,7 +1888,7 @@
     },
     {
       "Route": "js/autenticato.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -1933,7 +1933,7 @@
     },
     {
       "Route": "js/autenticato.k97hlx8g3l.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -1996,7 +1996,7 @@
     },
     {
       "Route": "js/autenticato.k97hlx8g3l.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\autenticato.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\autenticato.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2041,7 +2041,7 @@
     },
     {
       "Route": "js/autenticato.k97hlx8g3l.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\fwbyelr9c2-k97hlx8g3l.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2094,7 +2094,7 @@
     },
     {
       "Route": "js/fetchWithCookies.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2149,7 +2149,7 @@
     },
     {
       "Route": "js/fetchWithCookies.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\fetchWithCookies.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2186,7 +2186,7 @@
     },
     {
       "Route": "js/fetchWithCookies.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2231,7 +2231,7 @@
     },
     {
       "Route": "js/fetchWithCookies.w3to57aplv.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2294,7 +2294,7 @@
     },
     {
       "Route": "js/fetchWithCookies.w3to57aplv.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\fetchWithCookies.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\fetchWithCookies.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2339,7 +2339,7 @@
     },
     {
       "Route": "js/fetchWithCookies.w3to57aplv.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\qtg4e5ac9k-w3to57aplv.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2392,7 +2392,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2447,7 +2447,7 @@
     },
     {
       "Route": "js/site.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2484,7 +2484,7 @@
     },
     {
       "Route": "js/site.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2529,7 +2529,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2592,7 +2592,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\js\\site.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\js\\site.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2637,7 +2637,7 @@
     },
     {
       "Route": "js/site.xtxxf3hu2r.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\2sh6681xpm-xtxxf3hu2r.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2690,7 +2690,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2753,7 +2753,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2798,7 +2798,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.47otxtyo56.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2851,7 +2851,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -2906,7 +2906,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2943,7 +2943,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\e4o2tme8sz-47otxtyo56.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2988,7 +2988,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3051,7 +3051,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3096,7 +3096,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.4v8eqarkd7.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3149,7 +3149,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3204,7 +3204,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\dist\\jquery.validate.unobtrusive.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3241,7 +3241,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\aje5boh5d9-4v8eqarkd7.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3286,7 +3286,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3349,7 +3349,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3394,7 +3394,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.356vix0kms.txt.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3447,7 +3447,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3502,7 +3502,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3539,7 +3539,7 @@
     },
     {
       "Route": "lib/jquery-validation-unobtrusive/LICENSE.txt.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\7bfmcvyod8-356vix0kms.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3584,7 +3584,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.83jwlth58m.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3647,7 +3647,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.83jwlth58m.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3692,7 +3692,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.83jwlth58m.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3745,7 +3745,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3800,7 +3800,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3837,7 +3837,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\o68th8wk9o-83jwlth58m.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3882,7 +3882,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -3937,7 +3937,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3974,7 +3974,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4019,7 +4019,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4082,7 +4082,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4127,7 +4127,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/additional-methods.min.mrlpezrjn3.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\6yycaxips7-mrlpezrjn3.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4180,7 +4180,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4235,7 +4235,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4272,7 +4272,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4317,7 +4317,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4380,7 +4380,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4425,7 +4425,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.lzl9nlhx6b.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\upeat39f1i-lzl9nlhx6b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4478,7 +4478,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4541,7 +4541,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4586,7 +4586,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.ag7o75518u.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4639,7 +4639,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4694,7 +4694,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4731,7 +4731,7 @@
     },
     {
       "Route": "lib/jquery-validation/dist/jquery.validate.min.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\4me8l0quei-ag7o75518u.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4776,7 +4776,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4831,7 +4831,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4868,7 +4868,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.md.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4913,7 +4913,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -4976,7 +4976,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5021,7 +5021,7 @@
     },
     {
       "Route": "lib/jquery-validation/LICENSE.x0q3zqp4vz.md.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\i54hj1yue7-x0q3zqp4vz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5074,7 +5074,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5137,7 +5137,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5182,7 +5182,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.0i3buxo5is.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5235,7 +5235,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5290,7 +5290,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5327,7 +5327,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\n968seh1lw-0i3buxo5is.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5372,7 +5372,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5427,7 +5427,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5464,7 +5464,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5509,7 +5509,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5564,7 +5564,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5601,7 +5601,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.map.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5646,7 +5646,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5709,7 +5709,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5754,7 +5754,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.o1o13a6vjx.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\tcvkmulza4-o1o13a6vjx.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5807,7 +5807,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -5870,7 +5870,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5915,7 +5915,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.min.ttgo8qnofa.map.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\c6enre3y1m-ttgo8qnofa.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5968,7 +5968,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6031,7 +6031,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6076,7 +6076,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.2z0ns9nrw6.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6129,7 +6129,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6184,7 +6184,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6221,7 +6221,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\1nnvq1od5p-2z0ns9nrw6.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6266,7 +6266,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6329,7 +6329,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6374,7 +6374,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.87fc7y1x7t.map.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6427,7 +6427,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6482,7 +6482,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6519,7 +6519,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6564,7 +6564,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6619,7 +6619,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.map",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6656,7 +6656,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.map.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\bfquf6dsu7-87fc7y1x7t.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6701,7 +6701,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6764,7 +6764,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\dist\\jquery.slim.min.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6809,7 +6809,7 @@
     },
     {
       "Route": "lib/jquery/dist/jquery.slim.min.muycvpuwrr.js.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\r4bgcof3ma-muycvpuwrr.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6862,7 +6862,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -6925,7 +6925,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6970,7 +6970,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.mlv21k5csn.txt.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7023,7 +7023,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -7078,7 +7078,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7115,7 +7115,7 @@
     },
     {
       "Route": "lib/jquery/LICENSE.txt.gz",
-      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\Frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\frontend\\obj\\Debug\\net9.0\\compressed\\wyjnbyauwm-mlv21k5csn.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {

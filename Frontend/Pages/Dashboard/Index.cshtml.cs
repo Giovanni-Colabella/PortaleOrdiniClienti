@@ -43,6 +43,11 @@ public class IndexModel : PageModel
                 return RedirectToPage("/AccessoNegato");
             }
 
+            if(dashboardResponse.StatusCode == HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
+
             if (!dashboardResponse.IsSuccessStatusCode)
             {
                 Console.WriteLine($"Errore API: {dashboardResponse.StatusCode}");

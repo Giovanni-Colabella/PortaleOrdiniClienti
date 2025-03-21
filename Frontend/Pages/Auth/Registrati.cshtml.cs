@@ -35,7 +35,7 @@ namespace Frontend.Pages.Auth
             public string Password { get; set; } = "";
         }
 
-        public List<string> ListValidationErrors { get; set; } = new List<string>();
+        public List<string> ListValidationErrors { get; set; } = new();
 
         public void OnGet()
         {
@@ -92,7 +92,6 @@ namespace Frontend.Pages.Auth
             }
             catch (JsonException)
             {
-                ModelState.AddModelError(string.Empty, "Formato errore non riconosciuto");
                 ListValidationErrors.Add("Errore nel formato della risposta");
             }
 
@@ -103,7 +102,7 @@ namespace Frontend.Pages.Auth
     // Classe per mappare il JSON degli errori
     public class ValidationErrors
     {
-        [JsonProperty("errors")]
+        // [JsonProperty("errors")]
         public List<string> Errors { get; set; } = new List<string>();
     }
 }
