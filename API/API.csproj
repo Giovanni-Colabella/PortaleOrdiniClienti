@@ -38,7 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Migrations\" />
     <Folder Include="Models\Options\" />
+    <Folder Include="wwwroot\uploads\" />
     <Folder Include="wwwroot\uploads\prodotti\" />
   </ItemGroup>
 

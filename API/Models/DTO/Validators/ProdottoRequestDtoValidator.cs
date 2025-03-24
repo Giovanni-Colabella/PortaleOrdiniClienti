@@ -21,6 +21,9 @@ namespace API.Models.DTO.Validators
             RuleFor(p => p.Categoria)
                 .NotEmpty().WithMessage("La categoria è obbligatoria.");
 
+            RuleFor(p => p.Descrizione)
+                .MaximumLength(500).WithMessage("La descrizione non può superare i 500 caratteri.");
+
             RuleFor(p => p.Giacenza)
                 .GreaterThanOrEqualTo(0).WithMessage("La giacenza non può essere negativa.");
 

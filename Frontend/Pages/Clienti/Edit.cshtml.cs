@@ -27,7 +27,7 @@ namespace Frontend.Pages.Clienti
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.GetAsync($"http://localhost:5150/api/clienti/{id}");
 
-            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            if(response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
             {
                 return RedirectToPage("/AccessoNegato");
             }
@@ -59,7 +59,7 @@ namespace Frontend.Pages.Clienti
             _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.PutAsJsonAsync($"http://localhost:5150/api/clienti/{Cliente.Id}", Cliente);
 
-            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            if(response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
             {
                 return RedirectToPage("/AccessoNegato");
             }

@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using Frontend.Customizations.GlobalObjects;
 using Frontend.ViewModels;
 
@@ -24,7 +25,14 @@ namespace Frontend.Pages.Ordini
 
         public async Task<IActionResult> OnGetAsync(int id)
         {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.GetAsync($"http://localhost:5150/api/ordini/{id}");
+
+            if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized || response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
             if(!response.IsSuccessStatusCode)
             {
                 return NotFound();
@@ -40,7 +48,14 @@ namespace Frontend.Pages.Ordini
 
         public async Task<IActionResult> OnPostAsync()
         {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.PutAsJsonAsync($"http://localhost:5150/api/ordini/{Ordine.IdOrdine}", Ordine);
+
+            if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized || response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if(response.IsSuccessStatusCode){
                 return RedirectToPage("Index");

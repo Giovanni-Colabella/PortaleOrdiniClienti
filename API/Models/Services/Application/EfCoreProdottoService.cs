@@ -21,29 +21,49 @@ namespace API.Models.Services.Application
             _env = env;
         }
 
-        public async Task<List<ProdottoResponseDto>> GetProdottiAsync(int page)
+        public async Task<List<ProdottoResponseDto>> GetProdottiAsync(int page, string search, string categoria)
         {
-            const int pageSize = 10;
-            var prodotti = await _context.Prodotti.Skip((page - 1) * pageSize)
+            const int pageSize = 8;
+            var query = _context.Prodotti.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+                query = query.Where(prodotto => prodotto.NomeProdotto.Contains(search) ||
+                                                 prodotto.Categoria.Contains(search));
+
+
+            if (!string.IsNullOrWhiteSpace(categoria))
+                query = query.Where(prodotto => prodotto.Categoria == categoria);
+
+            var prodotti = await query.Skip((page - 1) * pageSize)
                                                 .Take(pageSize)
                                                 .ToListAsync();
 
             var prodottiResponseDto = prodotti.Select(p => ProdottoResponseDto.CreateBuilder()
+                .SetId(p.IdProdotto)
                 .SetNomeProdotto(p.NomeProdotto)
                 .SetPrezzo(p.Prezzo)
                 .SetCategoria(p.Categoria)
                 .SetGiacenza(p.Giacenza)
                 .SetImgPath(p.ImgPath)
                 .Build()
-                
+
             ).ToList();
 
             return prodottiResponseDto;
         }
 
-        public async Task<int> GetTotalProdottiCountAsync()
+        public async Task<int> GetTotalProdottiCountAsync(string search, string categoria)
         {
-            return await _context.Prodotti.CountAsync();
+            var query = _context.Prodotti.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+                query = query.Where(prodotto => prodotto.NomeProdotto.Contains(search) ||
+                                                 prodotto.Categoria.Contains(search));
+
+            if (!string.IsNullOrWhiteSpace(categoria))
+                query = query.Where(prodotto => prodotto.Categoria == categoria);
+
+            return await query.CountAsync();
         }
 
         public async Task<bool> CreateProdottoAsync(ProdottoRequestDto prodottoDto)
@@ -72,13 +92,14 @@ namespace API.Models.Services.Application
 
         }
 
-        public async Task<ProdottoResponseDto> GetProdottoById(int id)
+
+        public async Task<ProdottoResponseDto> GetProdottoByIdAsync(int id)
         {
             var prodotto = await _context.Prodotti.FindAsync(id);
 
-            if(prodotto != null)
+            if (prodotto != null)
                 return prodotto.ToDto();
-            
+
             throw new KeyNotFoundException($"Prodotto con ID {id} non trovato");
         }
 

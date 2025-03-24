@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>r3y691tlnq</Fingerprint>
-      <Integrity>2bCKjmxenxeWtFl84dfjqW8Q6Rry8lmMlHyR+p0UCkM=</Integrity>
+      <Fingerprint>uo0ktoamri</Fingerprint>
+      <Integrity>ggL4AXHw7/rmfa8DBJZULFkbU2LNJLvCpspXTTcUV7w=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\styles.css'))</OriginalItemSpec>
@@ -66,8 +66,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>k97hlx8g3l</Fingerprint>
-      <Integrity>CBh55dVwLuMD/WQ/8RYfLjy9Qn+CBWvGpUPIqF/rRRo=</Integrity>
+      <Fingerprint>3z1kt9f98x</Fingerprint>
+      <Integrity>AYhcf/nGd67Jyn9DeSrkmsmufyqVS5Ri9r0BAUDutU8=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\autenticato.js'))</OriginalItemSpec>
@@ -84,8 +84,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>w3to57aplv</Fingerprint>
-      <Integrity>XCqoL8zkVfsldcGEfGVAJGrXHNTfvan9nGS5Kl6cL68=</Integrity>
+      <Fingerprint>461k76c5hl</Fingerprint>
+      <Integrity>FH7tnzzcUL63SYSTOaLdExjoVgmOje8Le49IAw0qNp0=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\fetchWithCookies.js'))</OriginalItemSpec>

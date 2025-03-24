@@ -27,7 +27,7 @@ namespace Frontend.Pages.Clienti
             var response = await _httpClient.GetAsync("http://localhost:5150/api/clienti");
 
 
-            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            if(response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
             {
                 return RedirectToPage("/AccessoNegato");
             }
@@ -45,9 +45,11 @@ namespace Frontend.Pages.Clienti
             if (string.IsNullOrEmpty(Cliente.Indirizzo.Citta)) Cliente.Indirizzo.Citta = "";
             if (string.IsNullOrEmpty(Cliente.Indirizzo.CAP)) Cliente.Indirizzo.CAP = "";
 
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.PostAsJsonAsync("http://localhost:5150/api/clienti", Cliente);
 
-            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            if(response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
             {
                 return RedirectToPage("/AccessoNegato");
             }

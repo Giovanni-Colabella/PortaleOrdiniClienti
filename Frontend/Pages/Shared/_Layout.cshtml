@@ -40,6 +40,7 @@
                     <a asp-page="/Dashboard/Index" class="nav-link text-white font-medium transition-colors duration-300">Dashboard</a>
                     <a asp-page="/Clienti/Index" class="nav-link text-white font-medium transition-colors duration-300">Clienti</a>
                     <a asp-page="/Ordini/Index" class="nav-link text-white font-medium transition-colors duration-300">Ordini</a>
+                    <a asp-page="/Index" class="nav-link text-white font-medium transition-colors duration-300">Home</a>
                 </div>
                 <button id="mobile-menu-btn" class="sm:hidden p-2 rounded-lg hover:bg-gray-100">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,11 +52,12 @@
                 <a asp-page="/Dashboard/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Dashboard</a>
                 <a asp-page="/Clienti/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Clienti</a>
                 <a asp-page="/Ordini/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Ordini</a>
+                <a asp-page="/Index" class="block px-4 py-3 hover:bg-gray-50 rounded-lg transition-colors duration-300">Home</a>
             </div>
         </div>
     </nav>
 
-    <main class="container mx-auto px-6 py-12 flex-grow mt-20">
+    <main class="container mx-auto px-6 py-12 flex-grow mt-20 ">
         @RenderBody()
     </main>
 

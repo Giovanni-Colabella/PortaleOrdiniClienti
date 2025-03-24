@@ -11,10 +11,11 @@ namespace Frontend.Pages.Prodotti
 
         [BindProperty]
         [Required(ErrorMessage = "Il nome è obbligatorio")]
-        public string NomeProdotto { get; set; }  // Rinominato da 'Nome'
+        public string NomeProdotto { get; set; } 
 
         [BindProperty]
         [Required(ErrorMessage = "La descrizione è obbligatoria")]
+        [MaxLength(500, ErrorMessage = "La descrizione non può superare i 500 caratteri")]
         public string Descrizione { get; set; }
 
         [BindProperty]
@@ -29,10 +30,11 @@ namespace Frontend.Pages.Prodotti
         [BindProperty]
         [Required(ErrorMessage = "La quantità è obbligatoria")]
         [Range(0, int.MaxValue, ErrorMessage = "La quantità deve essere un numero positivo")]
-        public int Giacenza { get; set; }  // Rinominato da 'Quantita'
+        public int Giacenza { get; set; }  
 
         [BindProperty]
-        public IFormFile ImgFile { get; set; }  // Rinominato da 'ImmagineFile'
+        [Required(ErrorMessage = "L'immagine è obbligatoria")]
+        public IFormFile ImgFile { get; set; } 
 
         public CreateModel(HttpClient httpClient)
         {
@@ -48,13 +50,14 @@ namespace Frontend.Pages.Prodotti
 
             try
             {
-                var formData = new MultipartFormDataContent();
-
-                formData.Add(new StringContent(NomeProdotto), "NomeProdotto");
-                formData.Add(new StringContent(Descrizione), "Descrizione");
-                formData.Add(new StringContent(Prezzo.ToString()), "Prezzo");
-                formData.Add(new StringContent(Categoria), "Categoria");
-                formData.Add(new StringContent(Giacenza.ToString()), "Giacenza");
+                var formData = new MultipartFormDataContent
+                {
+                    { new StringContent(NomeProdotto), "NomeProdotto" },
+                    { new StringContent(Descrizione.ToString()), "Descrizione" },
+                    { new StringContent(Prezzo.ToString()), "Prezzo" },
+                    { new StringContent(Categoria), "Categoria" },
+                    { new StringContent(Giacenza.ToString()), "Giacenza" }
+                };
 
                 if (ImgFile != null && ImgFile.Length > 0)
                 {

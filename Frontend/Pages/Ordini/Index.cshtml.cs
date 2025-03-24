@@ -1,3 +1,4 @@
+using System.Net.Http.Headers;
 using Frontend.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -32,7 +33,15 @@ namespace Frontend.Pages.Ordini
                 url = $"http://localhost:5150/api/ordini/search?keyword={Uri.EscapeDataString(search)}";
             }
 
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.GetAsync(url);
+            
+            if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized || response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                Response.Redirect("/AccessoNegato");
+                return;
+            }
 
             if(response.IsSuccessStatusCode)
             {
@@ -53,7 +62,14 @@ namespace Frontend.Pages.Ordini
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)
         {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.DeleteAsync($"http://localhost:5150/api/ordini/{id}");
+
+            if(response.StatusCode == System.Net.HttpStatusCode.Unauthorized || response.StatusCode == System.Net.HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if(response.IsSuccessStatusCode)
             {

@@ -1,3 +1,5 @@
+using System.Net;
+using System.Net.Http.Headers;
 using Frontend.Customizations.GlobalObjects;
 using Frontend.ViewModels;
 using Microsoft.AspNetCore.Mvc;
@@ -19,9 +21,30 @@ namespace Frontend.Pages.Ordini
         [BindProperty]
         public OrdineViewModel Ordine { get; set; } = new OrdineViewModel();
 
+        public async Task<IActionResult> OnGetAsync()
+        {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            var response = await _httpClient.GetAsync("http://localhost:5150/api/ordini");
+
+            if (response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
+
+            return Page();
+        }
+
         public async Task<IActionResult> OnPostAsync()
         {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.PostAsJsonAsync("http://localhost:5150/api/ordini", Ordine);
+
+            if (response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if (response.IsSuccessStatusCode)
                 return RedirectToPage("Index");

@@ -10,6 +10,7 @@ namespace API.Models.Entities
         public string NomeProdotto { get; set; } = "";
         [Required]
         public string Categoria { get; set; } = "";
+        public string Descrizione { get; set; } = "";   
         [Required]
         public decimal Prezzo { get; set; } = 0.00M;
         [Required]
@@ -20,5 +21,7 @@ namespace API.Models.Entities
         public string ImgPath { get; set; } = "";
         // Relazione many-to-many con Ordine 
         public List<DettaglioOrdine> DettagliOrdini { get; set; } = new();
+
+        public List<CarrelloProdotto> CarrelloProdotti { get; set; }
     }
 }

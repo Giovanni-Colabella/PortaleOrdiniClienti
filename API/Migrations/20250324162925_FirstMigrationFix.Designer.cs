@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250320104803_AddNewBanIpFunctionality")]
-    partial class AddNewBanIpFunctionality
+    [Migration("20250324162925_FirstMigrationFix")]
+    partial class FirstMigrationFix
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -162,6 +162,40 @@ namespace API.Migrations
                     b.ToTable("BannedIps");
                 });
 
+            modelBuilder.Entity("API.Models.Entities.Carrello", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId")
+                        .IsUnique();
+
+                    b.ToTable("Carrelli");
+                });
+
+            modelBuilder.Entity("API.Models.Entities.CarrelloProdotto", b =>
+                {
+                    b.Property<int>("CarrelloId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ProdottoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("CarrelloId", "ProdottoId");
+
+                    b.HasIndex("ProdottoId");
+
+                    b.ToTable("CarrelloProdotti");
+                });
+
             modelBuilder.Entity("API.Models.Entities.DettaglioOrdine", b =>
                 {
                     b.Property<int>("IdDettaglio")
@@ -229,6 +263,10 @@ namespace API.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdProdotto"));
 
                     b.Property<string>("Categoria")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Descrizione")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -418,6 +456,36 @@ namespace API.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("API.Models.Entities.Carrello", b =>
+                {
+                    b.HasOne("API.Models.Cliente", "Cliente")
+                        .WithOne("Carrello")
+                        .HasForeignKey("API.Models.Entities.Carrello", "ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
+            modelBuilder.Entity("API.Models.Entities.CarrelloProdotto", b =>
+                {
+                    b.HasOne("API.Models.Entities.Carrello", "Carrello")
+                        .WithMany("CarrelloProdotti")
+                        .HasForeignKey("CarrelloId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("API.Models.Entities.Prodotto", "Prodotto")
+                        .WithMany("CarrelloProdotti")
+                        .HasForeignKey("ProdottoId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Carrello");
+
+                    b.Navigation("Prodotto");
+                });
+
             modelBuilder.Entity("API.Models.Entities.DettaglioOrdine", b =>
                 {
                     b.HasOne("API.Models.Entities.Ordine", "Ordine")
@@ -501,7 +569,15 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Models.Cliente", b =>
                 {
+                    b.Navigation("Carrello")
+                        .IsRequired();
+
                     b.Navigation("Ordini");
+                });
+
+            modelBuilder.Entity("API.Models.Entities.Carrello", b =>
+                {
+                    b.Navigation("CarrelloProdotti");
                 });
 
             modelBuilder.Entity("API.Models.Entities.Ordine", b =>
@@ -511,6 +587,8 @@ namespace API.Migrations
 
             modelBuilder.Entity("API.Models.Entities.Prodotto", b =>
                 {
+                    b.Navigation("CarrelloProdotti");
+
                     b.Navigation("DettagliOrdini");
                 });
 #pragma warning restore 612, 618

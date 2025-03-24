@@ -22,9 +22,8 @@ namespace Frontend.Pages.Prodotti
         public int CurrentPage { get; set; } = 1;
         public int TotalPages { get; set; } = 1;
         public string? Search { get; set; }
-        private const int PageSize = 10;
+        public string? CategoriaSelezionata { get; set; } 
 
-        // Classe per deserializzare la risposta API
         public class ProdottoResponse
         {
             public int TotalCount { get; set; }
@@ -33,63 +32,47 @@ namespace Frontend.Pages.Prodotti
             public List<ProdottoViewModel>? Items { get; set; }
         }
 
-        // Metodo helper per generare l'URL dell'immagine
         public string GetImmagineUrl(string nomeFile)
         {
-            if (string.IsNullOrWhiteSpace(nomeFile))
-                return _configuration["ApiUrl"]; // Immagine di default
-
-            var baseUrl = _configuration["ApiUrl"];
-            
-            return $"{baseUrl}{nomeFile}";
+            var baseUrl = _configuration["ApiUrl"] ?? "http://localhost:5150/";
+            return string.IsNullOrWhiteSpace(nomeFile) ? baseUrl : $"{baseUrl}{nomeFile}";
         }
 
         public string Truncate(string text, int maxLength)
         {
             if (string.IsNullOrWhiteSpace(text))
                 return string.Empty;
-
-            // Se la lunghezza desiderata � troppo piccola per i "...", restituisci il testo originale
-            if (maxLength <= 3)
-                return text.Length > maxLength ? text.Substring(0, maxLength) : text;
-
-            // Tronca a (maxLength - 3) caratteri e aggiunge "..."
             return text.Length > maxLength ? text.Substring(0, maxLength - 3) + "..." : text;
         }
 
-
-        public async Task<IActionResult> OnGetAsync(int? pageNumber, string? search)
+        public async Task<IActionResult> OnGetAsync(int? pageNumber, string? search, string? categoria)
         {
             CurrentPage = pageNumber ?? 1;
             Search = search;
+            CategoriaSelezionata = categoria; 
 
-            var url = $"http://localhost:5150/api/prodotti";
+            var baseUrl = _configuration["ApiUrl"] ?? "http://localhost:5150/";
+            var url = $"{baseUrl}api/prodotti?page={CurrentPage}";
 
             if (!string.IsNullOrWhiteSpace(search))
             {
-                url = $"http://localhost:5150/api/prodotti/search?keyword={Uri.EscapeDataString(search)}";
+                url += $"&search={Uri.EscapeDataString(search)}";
             }
 
-            var response = await _httpClient.GetAsync($"{url}?page={CurrentPage}&pageSize={PageSize}");
+            if (!string.IsNullOrWhiteSpace(categoria))
+            {
+                url += $"&categoria={Uri.EscapeDataString(categoria)}";
+            }
+
+            var response = await _httpClient.GetAsync(url);
 
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
                 var result = JsonConvert.DeserializeObject<ProdottoResponse>(json);
 
-                if (result?.Items != null)
-                {
-                    Prodotti = result.Items;
-                    TotalPages = result.TotalePagine;
-                }
-                else
-                {
-                    Prodotti = new List<ProdottoViewModel>();
-                }
-            }
-            else
-            {
-                ModelState.AddModelError(string.Empty, "Errore durante il recupero dei dati.");
+                Prodotti = result?.Items ?? new List<ProdottoViewModel>();
+                TotalPages = result?.TotalePagine ?? 1;
             }
 
             return Page();

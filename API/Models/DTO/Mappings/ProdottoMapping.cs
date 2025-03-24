@@ -10,6 +10,7 @@ public static class ProdottoMapping
         {
             NomeProdotto = prodottoRequestDto.NomeProdotto,
             Categoria = prodottoRequestDto.Categoria,
+            Descrizione = prodottoRequestDto.Descrizione,
             Prezzo = prodottoRequestDto.Prezzo,
             Giacenza = prodottoRequestDto.Giacenza
         };
@@ -20,6 +21,7 @@ public static class ProdottoMapping
         return ProdottoResponseDto.CreateBuilder().SetNomeProdotto(prodotto.NomeProdotto)
                                                             .SetPrezzo(prodotto.Prezzo)
                                                             .SetCategoria(prodotto.Categoria)
+                                                            .SetDescrizione(prodotto.Descrizione)
                                                             .SetGiacenza(prodotto.Giacenza)
                                                             .SetImgPath(prodotto.ImgPath)
                                                             .Build();

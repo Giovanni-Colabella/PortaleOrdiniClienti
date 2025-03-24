@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations;
 using System.Net;
 using System.Text;
 
@@ -22,7 +23,11 @@ namespace Frontend.Pages.Auth
 
         public class LoginInputModel
         {
+            [Required(ErrorMessage = "il campo 'Email' è obbligatorio")]
+            [EmailAddress(ErrorMessage = "il campo 'Email' deve essere un indirizzo email valido")]
             public string Email { get; set; } = "";
+
+            [Required(ErrorMessage = "il campo 'Password' è obbligatorio")]
             public string Password { get; set; } = "";
         }
 
@@ -54,7 +59,7 @@ namespace Frontend.Pages.Auth
             }
 
 
-            if (response.StatusCode == HttpStatusCode.Unauthorized)
+            if (response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.BadRequest)
             {
                 var errorContent = await response.Content.ReadAsStringAsync();
 
@@ -73,7 +78,7 @@ namespace Frontend.Pages.Auth
                 }
                 catch
                 {
-                    ListValidationErrors.Add("Errore nel formato della risposta");
+                    ListValidationErrors.Add("Email o password errati");
                 }
                 return Page();
             }

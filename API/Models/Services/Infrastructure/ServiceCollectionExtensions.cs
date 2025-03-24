@@ -112,6 +112,7 @@ public static class ServiceCollectionExtensions
         services.AddSingleton<ITokenBlacklist, TokenBlacklist>();
         services.AddScoped<IUtenteBloccatoService, BanUserByIpService>();
         services.AddScoped<IRolesService, EfCoreRolesService>();
+        services.AddScoped<ICarrelloService, EfCoreCarrelloService>();
 
         return services;
     }

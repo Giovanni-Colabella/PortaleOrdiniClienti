@@ -9,105 +9,113 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Frontend
 build_property.RootNamespace = Frontend
-build_property.ProjectDir = C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\
+build_property.ProjectDir = C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 9.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend
+build_property.MSBuildProjectDirectory = C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/AccessoNegato.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/AccessoNegato.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzb05lZ2F0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Auth/Login.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Auth/Logout.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Auth/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Auth/Registrati.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Auth/Registrati.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxSZWdpc3RyYXRpLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/BanUser/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/BanUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQmFuVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Clienti/Create.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Carrello/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmVsbG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Clienti/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50aVxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Clienti/Edit.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Clienti/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50aVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Clienti/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Clienti/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50aVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Contatti/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Contatti/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGF0dGlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Dashboard/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Dashboard/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGFzaGJvYXJkXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Error.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/GiveRolesToUser/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/GiveRolesToUser/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2l2ZVJvbGVzVG9Vc2VyXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Ordini/Create.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Ordini/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5pXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Ordini/Edit.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Ordini/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5pXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Ordini/Index.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Ordini/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkaW5pXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Prodotti/Create.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Prodotti/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZG90dGlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Shared/_Layout.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Prodotti/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZG90dGlcRGV0YWlsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Shared/_LayoutHome.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Shared/_LayoutHome.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXRIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Shared/_ValidationErrors.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Shared/_ValidationErrors.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uRXJyb3JzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/_ViewImports.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/_ViewStart.cshtml]
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/Frontend/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

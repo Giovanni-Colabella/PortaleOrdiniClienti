@@ -27,7 +27,7 @@ public class AuthController : ControllerBase
         IValidator<RegisterRequest> registerValidator,
         IConfiguration configuration,
         IValidator<LoginRequestDto> loginValidator,
-        ITokenBlacklist tokenBlacklist, 
+        ITokenBlacklist tokenBlacklist,
         UserManager<ApplicationUser> userManager)
     {
         _authService = authService;
@@ -64,7 +64,7 @@ public class AuthController : ControllerBase
     public async Task<IActionResult> Login([FromBody] LoginRequestDto request)
     {
         var ip = GetClientIp();
-        
+
 
         var validationResult = await _loginValidator.ValidateAsync(request);
 
@@ -94,7 +94,7 @@ public class AuthController : ControllerBase
             Expires = DateTime.Now.AddHours(1)
         });
 
-        return Ok();
+        return Ok("utente loggato");
     }
     private string GetClientIp()
     {
@@ -139,8 +139,21 @@ public class AuthController : ControllerBase
             return Unauthorized();
         }
 
-        Console.WriteLine("Token valido");
-        return Ok(true);
+        var handler = new JwtSecurityTokenHandler();
+        var jwtToken = handler.ReadToken(token) as JwtSecurityToken;
+
+        if (jwtToken == null)
+        {
+            Console.WriteLine("Token non valido");
+            return Unauthorized();
+        }
+
+        // Prendi tutti i ruoli dal token
+        var roles = jwtToken.Claims.Where(claim => claim.Type == "role")
+            .Select(claim => claim.Value)
+            .ToList();
+
+        return Ok(new { IsAuthenticated = true, Roles = roles });
     }
 
     private string GenerateJwtToken(ApplicationUser user)
@@ -148,7 +161,7 @@ public class AuthController : ControllerBase
         var tokenHandler = new JwtSecurityTokenHandler();
         var key = Encoding.ASCII.GetBytes(_configuration["Jwt:Key"]!);
 
-        var roles =  _userManager.GetRolesAsync(user).Result;
+        var roles = _userManager.GetRolesAsync(user).Result;
 
         var claims = new List<Claim>
         {

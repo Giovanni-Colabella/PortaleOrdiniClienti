@@ -1,8 +1,9 @@
+using System.Net;
 using API.Models.DTO;
 using API.Models.Services.Application;
 
 using FluentValidation;
-using Microsoft.AspNetCore.Authorization;
+
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -23,19 +24,41 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllProdotti([FromQuery] int page = 1)
+        public async Task<IActionResult> GetAllProdotti([FromQuery] int page = 1, [FromQuery] string search = "",
+            [FromQuery] string categoria = "")
         {
-            var prodotti = await _service.GetProdottiAsync(page);
-            var totaleProdotti = await _service.GetTotalProdottiCountAsync();
+            if(page < 1)
+            {
+                return BadRequest("La pagina deve essere maggiore di 0");
+            }
+            
+            // sanitizzazione della stringa di ricerca 
+            search = WebUtility.HtmlEncode(search).Trim();
+            categoria = WebUtility.HtmlEncode(categoria).Trim();
+
+            var prodotti = await _service.GetProdottiAsync(page, search, categoria);
+            var totaleProdotti = await _service.GetTotalProdottiCountAsync(search, categoria);
+            
 
             var json = new
             {
                 TotalCount = totaleProdotti,
                 PaginaCorrente = page,
-                TotalePagine = (int)Math.Ceiling(totaleProdotti / 10.0),
+                TotalePagine = (int)Math.Ceiling(totaleProdotti / (double)8),
                 Items = prodotti
             };
             return Ok(json);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetProdottoById(int id)
+        {
+            var prodotto = await _service.GetProdottoByIdAsync(id);
+            if (prodotto == null)
+            {
+                return NotFound();
+            }
+            return Ok(prodotto);
         }
 
         [HttpPost]
@@ -65,5 +88,6 @@ namespace API.Controllers
                 return StatusCode(500, $"Errore interno: {ex.Message}");
             }
         }
+
     }
 }

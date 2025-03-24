@@ -40,7 +40,7 @@ namespace MyProject.Pages.Clienti
 
             var response = await _httpClient.GetAsync(url);
 
-            if(response.StatusCode == HttpStatusCode.Unauthorized)
+            if(response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
             {
                 Response.Redirect("/AccessoNegato");
                 return;
@@ -67,7 +67,14 @@ namespace MyProject.Pages.Clienti
 
         public async Task<IActionResult> OnPostDeleteAsync(int id)
         {
+            var token = Request.Cookies["jwtToken"];
+            _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
             var response = await _httpClient.DeleteAsync($"http://localhost:5150/api/clienti/{id}");
+
+            if (response.StatusCode == HttpStatusCode.Unauthorized || response.StatusCode == HttpStatusCode.Forbidden)
+            {
+                return RedirectToPage("/AccessoNegato");
+            }
 
             if (response.IsSuccessStatusCode)
             {

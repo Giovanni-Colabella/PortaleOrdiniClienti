@@ -34,6 +34,7 @@ namespace API.Services
                         .HasColumnName("Indirizzo_CAP")
                         .IsRequired();
                 });
+
             #endregion
 
             #region Entità Ordine 
@@ -58,6 +59,25 @@ namespace API.Services
                 .HasForeignKey(op => op.ProdottoId);
             #endregion
 
+            
+            #region Entità CarrelloProdotto
+            modelBuilder.Entity<CarrelloProdotto>()
+                .HasKey(cp => new { cp.CarrelloId, cp.ProdottoId }); // Chiave primaria composta
+            
+            modelBuilder.Entity<CarrelloProdotto>()
+                .HasOne(cp => cp.Carrello)
+                .WithMany(c => c.CarrelloProdotti)
+                .HasForeignKey(cp => cp.CarrelloId)
+                .OnDelete(DeleteBehavior.Cascade); // Se un carrello viene cancellato, cancella anche i suoi prodotti
+
+            modelBuilder.Entity<CarrelloProdotto>()
+                .HasOne(cp => cp.Prodotto)
+                .WithMany(p => p.CarrelloProdotti)
+                .HasForeignKey(cp => cp.ProdottoId)
+                .OnDelete(DeleteBehavior.Cascade); // Se un prodotto viene cancellato, cancella anche i suoi carrelli
+            
+            #endregion
+            
         }
 
         // Tabelle 
@@ -66,7 +86,9 @@ namespace API.Services
         public DbSet<Ordine> Ordini { get; set; } // Tabella Ordini
         public DbSet<Prodotto> Prodotti { get; set; } // Tabella Prodotti
         public DbSet<DettaglioOrdine> DettagliOrdini { get; set; } // Tabella intermedia DettagliOrdini 
-        public DbSet<BannedIp> BannedIps { get; set; } // Tabella BannedIps      
+        public DbSet<BannedIp> BannedIps { get; set; } // Tabella BannedIps 
+        public DbSet<Carrello> Carrelli { get; set; }
+        public DbSet<CarrelloProdotto> CarrelloProdotti { get; set; }
           
         #endregion
     }
