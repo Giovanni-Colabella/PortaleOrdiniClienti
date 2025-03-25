@@ -10,5 +10,74 @@
 </h2>
 
 <div class="container mx-auto px-4 py-12">
-    
+    @if (Model.Articoli != null && Model.Articoli.Any())
+    {
+        <div class="bg-white p-6 shadow-md rounded-lg">
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-700">
+                        <th class="p-3 text-left">Immagine</th>
+                        <th class="p-3 text-left">Prodotto</th>
+                        <th class="p-3 text-left">Prezzo</th>
+                        <th class="p-3 text-center">Operazioni</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var articolo in Model.Articoli)
+                    {
+                        <tr class="border-b">
+                            <td class="p-3"><img src="@Model.GetImmagineUrl(articolo.ImgPath)" alt="Immagine prodotto"
+                                class="w-16 h-16 object-cover rounded" /
+                            ></td>
+                            <td class="p-3">@articolo.NomeProdotto</td>
+                            <td class="p-3">@articolo.Prezzo.ToString("C")</td>
+                            <td class="p-3 text-center">
+                                <button class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700" 
+                                        onclick="rimuoviDalCarrello(@articolo.Id)">
+                                    Rimuovi
+                                </button>
+                                <a class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-700"
+                                   asp-page="/Prodotti/Detail" asp-route-id="@articolo.Id">
+                                    Acquista
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+    else
+    {
+        <div class="text-center text-gray-600 text-xl">Il carrello è vuoto.</div>
+    }
 </div>
+
+<script>
+    async function rimuoviDalCarrello(prodottoId) {
+    try {
+        const response = await fetch(`http://localhost:5150/api/carrello/${prodottoId}`, {
+            method: "DELETE",
+            credentials: "include",
+            headers: { "Content-Type": "application/json" }
+        });
+
+        console.log("Stato risposta:", response.status); // Debug status code
+        const responseData = await response.text();
+        console.log("Risposta server:", responseData); // Debug body response
+
+        if (!response.ok) {
+            throw new Error(`Errore ${response.status}: ${responseData}`);
+        }
+
+        console.log(response.json());
+
+        alert("Prodotto rimosso dal carrello.");
+        location.reload();
+    } catch (error) {
+        console.error("Errore:", error);
+        alert(`Impossibile rimuovere il prodotto: ${error.message}`);
+    }
+}
+
+</script>

@@ -17,6 +17,5 @@ namespace API.Models
         public DateTime DataIscrizione { get; set; }
 
         public List<Ordine> Ordini { get; set; } = new List<Ordine>();
-        public Carrello Carrello { get; set; }
     }
 }

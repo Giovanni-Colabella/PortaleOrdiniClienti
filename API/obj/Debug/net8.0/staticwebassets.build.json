@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EamOmgZZ7S+mWkeWdoiUykcKLOv3DAQxcZrIhzof3WA=",
+  "Hash": "yCfbE+CuDwEMSP8hLyKa9CsPzTqkD2gJnoC530o4ThA=",
   "Source": "API",
   "BasePath": "_content/API",
   "Mode": "Default",
@@ -15,6 +15,832 @@
       "Pattern": "**"
     }
   ],
-  "Assets": [],
-  "Endpoints": []
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_1_11cebe9183394a349d68598dc89cd8bf.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_1_11cebe9183394a349d68598dc89cd8bf#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "l9v70zw1vq",
+      "Integrity": "CUbx/kM/cOZnUukD2Ke6opIxKEgcExerTd9xLuFi3s0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_1_11cebe9183394a349d68598dc89cd8bf.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_2_cff1e6840a9447ffbee4c7e0b57928e0#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "emrat4rxud",
+      "Integrity": "VmfohGkXtIQ7gKEp2u3pbI2R3hBO9bVx0v5QkgFctAA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_3_c0d8b05160b84e4ead6c4fa54ef150f9#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "04n6mptire",
+      "Integrity": "gOSawmnLzBtWOLrQhsiBKlLCdq9wNA84BRYWy10ScSc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_4_c2b81e71d47c4ab5a227b82b5c30a843#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iohrngwr7v",
+      "Integrity": "QglB9/ONaiIWwMl+hM7BVOQd2OLqB54ywRrEMKqUitM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_5_137b004d85cf445c9fab4e6c13e90331.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_5_137b004d85cf445c9fab4e6c13e90331#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oycqclrtqd",
+      "Integrity": "4EtIN741QdGBB+jZBYqf44BPtPCtHVn/jDUKGLOxQsA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_5_137b004d85cf445c9fab4e6c13e90331.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_6_85e0826fc0014c209f34313cb0bc68e7#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "g0i5ehvirk",
+      "Integrity": "cAwONbl3xLV0KZtotn0e6fYF7zin+YRDXsONBmHarfE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_7_12cf91ef83084e26a76461be98742183.jpg",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_7_12cf91ef83084e26a76461be98742183#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lzolx6sxlx",
+      "Integrity": "wQqyXi8PsPcqmvjrEhDGkfgricxu5hcAvgha2zpcUW4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_7_12cf91ef83084e26a76461be98742183.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_8_269f3ab0398448e099146c1c9347ac4b.png",
+      "SourceId": "API",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\",
+      "BasePath": "_content/API",
+      "RelativePath": "uploads/prodotti/prod_8_269f3ab0398448e099146c1c9347ac4b#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "znyqe32vmp",
+      "Integrity": "/8ubZaAuz70PLIps4+p3eKXdHD9wItgbSceYyJh71Xs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\prodotti\\prod_8_269f3ab0398448e099146c1c9347ac4b.png"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "uploads/prodotti/prod_1_11cebe9183394a349d68598dc89cd8bf.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_1_11cebe9183394a349d68598dc89cd8bf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CUbx/kM/cOZnUukD2Ke6opIxKEgcExerTd9xLuFi3s0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:50:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-CUbx/kM/cOZnUukD2Ke6opIxKEgcExerTd9xLuFi3s0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_1_11cebe9183394a349d68598dc89cd8bf.l9v70zw1vq.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_1_11cebe9183394a349d68598dc89cd8bf.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "93148"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"CUbx/kM/cOZnUukD2Ke6opIxKEgcExerTd9xLuFi3s0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:50:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l9v70zw1vq"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_1_11cebe9183394a349d68598dc89cd8bf.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-CUbx/kM/cOZnUukD2Ke6opIxKEgcExerTd9xLuFi3s0="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_2_cff1e6840a9447ffbee4c7e0b57928e0.emrat4rxud.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VmfohGkXtIQ7gKEp2u3pbI2R3hBO9bVx0v5QkgFctAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:52:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "emrat4rxud"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VmfohGkXtIQ7gKEp2u3pbI2R3hBO9bVx0v5QkgFctAA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_2_cff1e6840a9447ffbee4c7e0b57928e0.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "37261"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VmfohGkXtIQ7gKEp2u3pbI2R3hBO9bVx0v5QkgFctAA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:52:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VmfohGkXtIQ7gKEp2u3pbI2R3hBO9bVx0v5QkgFctAA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.04n6mptire.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOSawmnLzBtWOLrQhsiBKlLCdq9wNA84BRYWy10ScSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:53:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "04n6mptire"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOSawmnLzBtWOLrQhsiBKlLCdq9wNA84BRYWy10ScSc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_3_c0d8b05160b84e4ead6c4fa54ef150f9.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "73143"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gOSawmnLzBtWOLrQhsiBKlLCdq9wNA84BRYWy10ScSc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:53:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gOSawmnLzBtWOLrQhsiBKlLCdq9wNA84BRYWy10ScSc="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_4_c2b81e71d47c4ab5a227b82b5c30a843.iohrngwr7v.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58297"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QglB9/ONaiIWwMl+hM7BVOQd2OLqB54ywRrEMKqUitM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:56:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iohrngwr7v"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QglB9/ONaiIWwMl+hM7BVOQd2OLqB54ywRrEMKqUitM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_4_c2b81e71d47c4ab5a227b82b5c30a843.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "58297"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QglB9/ONaiIWwMl+hM7BVOQd2OLqB54ywRrEMKqUitM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:56:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QglB9/ONaiIWwMl+hM7BVOQd2OLqB54ywRrEMKqUitM="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_5_137b004d85cf445c9fab4e6c13e90331.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_5_137b004d85cf445c9fab4e6c13e90331.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4EtIN741QdGBB+jZBYqf44BPtPCtHVn/jDUKGLOxQsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:58:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4EtIN741QdGBB+jZBYqf44BPtPCtHVn/jDUKGLOxQsA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_5_137b004d85cf445c9fab4e6c13e90331.oycqclrtqd.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_5_137b004d85cf445c9fab4e6c13e90331.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35828"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4EtIN741QdGBB+jZBYqf44BPtPCtHVn/jDUKGLOxQsA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 16:58:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oycqclrtqd"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_5_137b004d85cf445c9fab4e6c13e90331.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4EtIN741QdGBB+jZBYqf44BPtPCtHVn/jDUKGLOxQsA="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_6_85e0826fc0014c209f34313cb0bc68e7.g0i5ehvirk.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cAwONbl3xLV0KZtotn0e6fYF7zin+YRDXsONBmHarfE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:00:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "g0i5ehvirk"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-cAwONbl3xLV0KZtotn0e6fYF7zin+YRDXsONBmHarfE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_6_85e0826fc0014c209f34313cb0bc68e7.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"cAwONbl3xLV0KZtotn0e6fYF7zin+YRDXsONBmHarfE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:00:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-cAwONbl3xLV0KZtotn0e6fYF7zin+YRDXsONBmHarfE="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_7_12cf91ef83084e26a76461be98742183.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_7_12cf91ef83084e26a76461be98742183.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wQqyXi8PsPcqmvjrEhDGkfgricxu5hcAvgha2zpcUW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:01:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wQqyXi8PsPcqmvjrEhDGkfgricxu5hcAvgha2zpcUW4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_7_12cf91ef83084e26a76461be98742183.lzolx6sxlx.jpg",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_7_12cf91ef83084e26a76461be98742183.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "85357"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wQqyXi8PsPcqmvjrEhDGkfgricxu5hcAvgha2zpcUW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:01:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lzolx6sxlx"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_7_12cf91ef83084e26a76461be98742183.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wQqyXi8PsPcqmvjrEhDGkfgricxu5hcAvgha2zpcUW4="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_8_269f3ab0398448e099146c1c9347ac4b.png",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_8_269f3ab0398448e099146c1c9347ac4b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1413979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/8ubZaAuz70PLIps4+p3eKXdHD9wItgbSceYyJh71Xs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:04:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-/8ubZaAuz70PLIps4+p3eKXdHD9wItgbSceYyJh71Xs="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/prodotti/prod_8_269f3ab0398448e099146c1c9347ac4b.znyqe32vmp.png",
+      "AssetFile": "C:\\Users\\A570_Apulia\\Desktop\\PortaleOrdiniClienti\\api\\wwwroot\\uploads\\prodotti\\prod_8_269f3ab0398448e099146c1c9347ac4b.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1413979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"/8ubZaAuz70PLIps4+p3eKXdHD9wItgbSceYyJh71Xs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 24 Mar 2025 17:04:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "znyqe32vmp"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/prodotti/prod_8_269f3ab0398448e099146c1c9347ac4b.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-/8ubZaAuz70PLIps4+p3eKXdHD9wItgbSceYyJh71Xs="
+        }
+      ]
+    }
+  ]
 }

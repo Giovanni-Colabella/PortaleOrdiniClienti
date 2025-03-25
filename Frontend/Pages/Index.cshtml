@@ -180,6 +180,7 @@
 
     <script>
         document.addEventListener("DOMContentLoaded", () => {
+            // Banner Cookie
             const accettaCookieBtn = document.getElementById("AccettaCookieBtn");
             const bannerCookie = document.getElementById("BannerCookie");
 
@@ -188,28 +189,59 @@
                     bannerCookie.style.display = "none";
                 });
             } else {
-                console.error("Elementi non trovati!");
+                console.error("Elementi banner cookie non trovati!");
             }
-        });
 
-        document.addEventListener("DOMContentLoaded", () => {
-            document.querySelectorAll(".add-to-cart").forEach(button => {
-                button.addEventListener("click", async () => {
-                    const prodottoId = button.getAttribute("data-id");
-
+            // Aggiungi al carrello
+            async function aggiungiAlCarrello(prodottoId) {
+                try {
                     const response = await fetch("http://localhost:5150/api/carrello", {
                         method: "POST",
-                        headers: {
-                            "Content-Type": "application/json"
-                        },
-                        body: JSON.stringify({ prodottoId: parseInt(prodottoId) })
+                        credentials: "include", // Invio automatico dei cookie HttpOnly
+                        headers: { "Content-Type": "application/json" },
+                        body: JSON.stringify(prodottoId)
                     });
 
-                    if (response.ok) {
-                        alert("Prodotto aggiunto al carrello!");
-                    } else {
-                        alert("Errore durante l'aggiunta al carrello!");
+                    if(response.status == 401 || response.status == 403){
+                        alert("Devi effettuare l'accesso per aggiungere prodotti al carrello.");
+                        return;
                     }
+
+                    if (!response.ok) {
+                        // Controlla se la risposta ha contenuto prima di leggerla come JSON
+                        const errorMessage = response.statusText || `Errore: ${response.status}`;
+                        let errorData = null;
+
+                        try {
+                            errorData = await response.json();
+                        } catch (jsonError) {
+                            console.warn("La risposta non contiene JSON valido.");
+                        }
+
+                        throw new Error(errorData?.message || errorMessage);
+                    }
+
+                    // Se il server restituisce 204 No Content, non provare a leggere il JSON
+                    if (response.status === 200) {
+                        alert("Prodotto aggiunto al carrello!");
+                        return;
+                    }
+
+                    // Se il server restituisce JSON valido
+                    const data = await response.json();
+                    alert(data.message || "Prodotto aggiunto al carrello!");
+                } catch (error) {
+                    console.error("Errore nell'aggiunta al carrello:", error);
+                    alert(error.message || "Errore durante l'aggiunta al carrello.");
+                }
+            }
+
+
+            // Aggiungi evento ai bottoni "Aggiungi al Carrello"
+            document.querySelectorAll("[data-id]").forEach(button => {
+                button.addEventListener("click", function () {
+                    const prodottoId = this.getAttribute("data-id");
+                    aggiungiAlCarrello(prodottoId);
                 });
             });
         });

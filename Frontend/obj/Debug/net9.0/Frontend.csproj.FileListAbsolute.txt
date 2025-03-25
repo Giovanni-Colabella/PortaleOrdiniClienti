@@ -55,4 +55,4 @@ C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\Fron
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\ref\Frontend.dll
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\obj\Debug\net9.0\compressed\qtg4e5ac9k-461k76c5hl.gz
 C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\obj\Debug\net9.0\compressed\fwbyelr9c2-3z1kt9f98x.gz
-C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\Frontend\obj\Debug\net9.0\compressed\qufg9nuftv-uo0ktoamri.gz
+C:\Users\A570_Apulia\Desktop\PortaleOrdiniClienti\frontend\obj\Debug\net9.0\compressed\qufg9nuftv-fmh6ry67pa.gz

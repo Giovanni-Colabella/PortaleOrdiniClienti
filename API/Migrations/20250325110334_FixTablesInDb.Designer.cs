@@ -4,6 +4,7 @@ using API.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace API.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250325110334_FixTablesInDb")]
+    partial class FixTablesInDb
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -173,8 +176,7 @@ namespace API.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("ClienteId")
-                        .IsUnique();
+                    b.HasIndex("ClienteId");
 
                     b.ToTable("Carrelli");
                 });
@@ -457,8 +459,8 @@ namespace API.Migrations
             modelBuilder.Entity("API.Models.Entities.Carrello", b =>
                 {
                     b.HasOne("API.Models.Entities.ApplicationUser", "Cliente")
-                        .WithOne("Carrello")
-                        .HasForeignKey("API.Models.Entities.Carrello", "ClienteId")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -568,12 +570,6 @@ namespace API.Migrations
             modelBuilder.Entity("API.Models.Cliente", b =>
                 {
                     b.Navigation("Ordini");
-                });
-
-            modelBuilder.Entity("API.Models.Entities.ApplicationUser", b =>
-                {
-                    b.Navigation("Carrello")
-                        .IsRequired();
                 });
 
             modelBuilder.Entity("API.Models.Entities.Carrello", b =>
