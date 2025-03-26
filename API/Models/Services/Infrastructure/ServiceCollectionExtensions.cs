@@ -98,6 +98,18 @@ public static class ServiceCollectionExtensions
                 IssuerSigningKey = key,
             };
 
+            options.Events = new JwtBearerEvents
+            {
+                OnMessageReceived = ctx => {
+                    var token = ctx.Request.Cookies["jwtToken"];
+
+                    if(!string.IsNullOrEmpty(token))
+                        ctx.Request.Headers["Authorization"] = $"Bearer {token}";
+
+                    return Task.CompletedTask;
+                }
+            };
+
         });
 
         return services;

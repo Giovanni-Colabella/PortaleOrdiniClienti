@@ -61,16 +61,6 @@ app.UseRouting();
 
 app.UseCors("AllowFrontend");
 
-app.Use(async (context, next) =>
-{
-    var token = context.Request.Cookies["jwtToken"];
-    if (!string.IsNullOrEmpty(token))
-    {
-        context.Request.Headers["Authorization"] = $"Bearer {token}";
-    }
-    await next();
-});
-
 app.UseAuthentication();
 app.UseAuthorization();
 

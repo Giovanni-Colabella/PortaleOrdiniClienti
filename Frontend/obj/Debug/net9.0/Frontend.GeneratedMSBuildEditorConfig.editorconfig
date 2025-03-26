@@ -24,6 +24,10 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzb05lZ2F0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Auth/AccountManager.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxBY2NvdW50TWFuYWdlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Auth/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXV0aFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -42,6 +46,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Carrello/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FycmVsbG9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/ChiSiamo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hpU2lhbW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/A570_Apulia/Desktop/PortaleOrdiniClienti/frontend/Pages/Clienti/Create.cshtml]

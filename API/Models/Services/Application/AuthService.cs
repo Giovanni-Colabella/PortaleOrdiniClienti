@@ -67,5 +67,41 @@ namespace API.Models.Services.Application
             return await _userManager.CheckPasswordAsync(user, password);
         }
 
+        public async Task<bool> UpdateAccountAsync(UpdateAccountRequestDto dto)
+        {
+            var user = await _userManager.FindByIdAsync(dto.UserId);
+            if ( user == null ) return false; // Utente non trovato
+
+            user.Nome = dto.Nome;
+            user.Cognome = dto.Cognome;
+            user.Email = dto.Email;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            return result.Succeeded;
+
+        }
+
+        public async Task<bool> UpdatePasswordAsync(UpdatePasswordRequestDto dto)
+        {
+            var user = await _userManager.FindByIdAsync(dto.UserId);
+            if(user == null ) return false; // Account non trovato
+
+            if(!await _userManager.CheckPasswordAsync(user, dto.PasswordCorrente))
+                return false;
+
+            var result = await _userManager.ChangePasswordAsync(user, dto.PasswordCorrente, dto.NuovaPassword);
+            return true; 
+        }
+
+        public ApplicationUserDto GetAppUser(ApplicationUser user)
+        {
+            return new ApplicationUserDto {
+                UserId = user.Id,
+                Nome = user.Nome,
+                Cognome = user.Cognome,
+                Email = user.Email
+            };
+        }
     }
 }

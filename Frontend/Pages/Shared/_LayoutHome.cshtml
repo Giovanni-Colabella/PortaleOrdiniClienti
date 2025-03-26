@@ -36,8 +36,9 @@
             <div class="hidden sm:flex space-x-6 items-center" id="desktop-menu">
                 <a href="/" class="text-white hover:text-gray-300 transition">Home</a>
                 <a href="/Contatti" class="text-white hover:text-gray-300 transition">Contatti</a>
-                <a href="/Carrello" class="text-white hover::text-gray-300 transition"><i class="fas fa-shopping-cart"></i>
- Carrello</a>
+                <a href="/Carrello" class="text-white hover::text-gray-300 transition"><i
+                        class="fas fa-shopping-cart"></i>
+                    Carrello</a>
                 <a asp-page="/Auth/Registrati"
                     class="px-4 py-2 text-sm bg-white text-blue-900 rounded-lg shadow-md hover:bg-gray-200 transition"
                     id="registerButton">
@@ -49,6 +50,12 @@
                 <a asp-page="/Auth/Login" id="loginButton" class="text-white hover:text-gray-300 text-xl">
                     <i class="fas fa-sign-in-alt text-green-400"></i> Accedi
                 </a>
+
+                <a asp-page="/Auth/AccountManager" id="profile"
+                    class="text-white hover:text-gray-300 text-2xl p-2 rounded-full transition duration-300 ease-in-out">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+
                 <a asp-page="/Dashboard/Index" id="dashboardAdmin"
                     class="text-red-500 hover:text-red-600 text-xl font-bold border-solid hidden">Admin</a>
             </div>

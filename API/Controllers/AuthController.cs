@@ -7,6 +7,7 @@ using API.Models.Entities;
 using API.Models.Services.Application;
 
 using FluentValidation;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
@@ -18,6 +19,8 @@ public class AuthController : ControllerBase
     private readonly IAuthService _authService;
     private readonly IValidator<RegisterRequest> _registerValidator;
     private readonly IValidator<LoginRequestDto> _loginValidator;
+    private readonly IValidator<UpdateAccountRequestDto> _accountValidator;
+    private readonly IValidator<UpdatePasswordRequestDto> _passwordValidator;
     private readonly IConfiguration _configuration;
     private readonly ITokenBlacklist _tokenBlacklist;
     private readonly UserManager<ApplicationUser> _userManager;
@@ -25,6 +28,8 @@ public class AuthController : ControllerBase
     public AuthController(
         IAuthService authService,
         IValidator<RegisterRequest> registerValidator,
+        IValidator<UpdateAccountRequestDto> accountValidator,
+        IValidator<UpdatePasswordRequestDto> passwordValidator,
         IConfiguration configuration,
         IValidator<LoginRequestDto> loginValidator,
         ITokenBlacklist tokenBlacklist,
@@ -33,6 +38,8 @@ public class AuthController : ControllerBase
         _authService = authService;
         _registerValidator = registerValidator;
         _loginValidator = loginValidator;
+        _accountValidator = accountValidator;
+        _passwordValidator = passwordValidator;
         _configuration = configuration;
         _tokenBlacklist = tokenBlacklist;
         _userManager = userManager;
@@ -191,6 +198,63 @@ public class AuthController : ControllerBase
 
         var token = tokenHandler.CreateToken(tokenDescriptor);
         return tokenHandler.WriteToken(token);
+    }
+
+    [Authorize]
+    [HttpPost("UpdateAccount")]
+    public async Task<IActionResult> UpdateAccount( [FromBody] UpdateAccountRequestDto request )
+    {
+        var userId = _userManager.GetUserId(User);
+
+        if(userId != request.UserId)
+            return Forbid("Puoi cambiare le impostazioni dell'account solo sul tuo account");
+
+        var validationResult = await _accountValidator.ValidateAsync(request);
+        if(!validationResult.IsValid)
+        {
+            var validationErrors = validationResult.Errors.Select( error => error.ErrorMessage ).ToList();
+            return BadRequest(new {Errors = validationErrors });
+        }
+
+
+        var result = await _authService.UpdateAccountAsync(request);
+        if(!result) return BadRequest("Errore: Impossibile aggiornare il profilo");
+
+        return Ok("Profilo aggiornato con successo!");
+    }
+
+    [Authorize]
+    [HttpPost("UpdatePassword")]
+    public async Task<IActionResult> UpdatePassword( [FromBody] UpdatePasswordRequestDto request )
+    {
+        var userId = _userManager.GetUserId(User);
+
+        if(userId != request.UserId)
+            return Forbid("Puoi cambiare la password solo sul tuo account");
+
+        var validationResult = await _passwordValidator.ValidateAsync(request);
+        if(!validationResult.IsValid)
+        {
+            var validationErrors = validationResult.Errors.Select( error => error.ErrorMessage ).ToList();
+            return BadRequest(new {Errors = validationErrors });
+        }
+
+        var result = await _authService.UpdatePasswordAsync(request);
+        if(!result) return BadRequest("Errore: Impossibile aggiornare la password");
+
+        return Ok("Password cambiata con successo");
+    }
+
+    [Authorize]
+    [HttpGet("GetUser")]
+    public async Task<IActionResult> GetUser()
+    {
+        var user = await _userManager.GetUserAsync(User);
+
+        if(user == null) return NotFound("Nessun utente trovato");
+
+
+        return Ok( _authService.GetAppUser(user));
     }
 
 }
